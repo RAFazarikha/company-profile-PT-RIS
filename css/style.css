@@ -1,8 +1,14 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+:root{
+    --primary-color: #0149aa;
+    --secondary-color: #fedc56;
+}
+
+
 body {
-    color: #666666;
+    color: var(--primary-color);
     background: #dddddd;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -14,18 +20,18 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #030f27;
+    color: var(--primary-color);
 }
 
 a {
-    color: #666666;
+    color: var(--primary-color);
     transition: .3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #fdbe33;
+    color: var(--secondary-color);
     outline: none;
     text-decoration: none;
 }
@@ -45,8 +51,8 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #fdbe33;
-    color: #121518;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     width: 44px;
     height: 44px;
     text-align: center;
@@ -59,8 +65,8 @@ a:focus {
 }
 
 .back-to-top:hover {
-    color: #fdbe33;
-    background: #121518;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 .back-to-top i {
@@ -78,7 +84,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .top-bar .logo {
@@ -89,7 +95,7 @@ a:focus {
 
 .top-bar .logo h1 {
     margin: 0;
-    color: #030f27;
+    color: var(--primary-color);
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
@@ -115,7 +121,7 @@ a:focus {
 
 .top-bar .top-bar-icon [class^="flaticon-"]::before {
     margin: 0;
-    color: #030f27;
+    color: var(--primary-color);
     font-size: 40px;
 }
 
@@ -125,14 +131,14 @@ a:focus {
 
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
-    color: #030f27;
+    color: var(--primary-color);
     font-size: 16px;
     font-weight: 400;
 }
 
 .top-bar .top-bar-text p {
     margin: 0;
-    color: #030f27;
+    color: var(--primary-color);
     font-size: 13px;
     font-weight: 400;
 }
@@ -147,6 +153,9 @@ a:focus {
     .top-bar .logo {
         text-align: center;
     }
+    .top-bar .logo h1{
+        font-size: x-large;
+    }
 }
 
 
@@ -155,7 +164,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
+    background: var(--secondary-color);
     transition: .3s;
 }
 
@@ -174,7 +183,7 @@ a:focus {
 
 .nav-bar .navbar {
     height: 100%;
-    background: #030f27 !important;
+    background: var(--primary-color) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -187,7 +196,7 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fdbe33;
+    color: var(--secondary-color);
     transition: none;
 }
 
@@ -205,9 +214,9 @@ a:focus {
 }
 
 .nav-bar .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 @media (min-width: 992px) {
@@ -330,9 +339,9 @@ a:focus {
 }
 
 .carousel .carousel-caption .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 @media (max-width: 767.98px) {
@@ -385,12 +394,12 @@ a:focus {
     margin-bottom: 45px;
     padding: 90px 0;
     text-align: center;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .page-header h2 {
     position: relative;
-    color: #030f27;
+    color: var(--primary-color);
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -404,14 +413,14 @@ a:focus {
     height: 2px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #030f27;
+    background: var(--primary-color);
 }
 
 .page-header a {
     position: relative;
     padding: 0 12px;
     font-size: 22px;
-    color: #030f27;
+    color: var(--primary-color);
 }
 
 .page-header a:hover {
@@ -426,7 +435,7 @@ a:focus {
     top: -2px;
     right: -7px;
     text-align: center;
-    color: #121518;
+    color: var(--primary-color);
 }
 
 .page-header a:last-child::after {
@@ -472,7 +481,7 @@ a:focus {
 }
 
 .section-header p {
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -501,16 +510,16 @@ a:focus {
 }
 
 .feature .col-md-12 {
-    background: #030f27;
+    background: var(--primary-color);
 }
     
 .feature .col-md-12:nth-child(2n) {
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 .feature .feature-item {
-    min-height: 250px;
+    min-height: 455px;
     padding: 30px;
     display: flex;
     align-items: center;
@@ -544,19 +553,19 @@ a:focus {
     height: 79px;
     top: -18px;
     left: -9px;
-    background: #030f27;
+    background: var(--primary-color);
     border-radius: 60px;
     z-index: 2;
 }
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .feature .feature-icon [class^="flaticon-"]::before {
     position: relative;
     margin: 0;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 60px;
     line-height: 60px;
     z-index: 3;
@@ -568,14 +577,14 @@ a:focus {
 
 .feature .feature-text h3 {
     margin: 0 0 10px 0;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 25px;
     font-weight: 600;
 }
 
 .feature .feature-text p {
     margin: 0;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 18px;
     font-weight: 400;
 }
@@ -583,9 +592,20 @@ a:focus {
 .feature .col-md-12:nth-child(2n) [class^="flaticon-"]::before,
 .feature .col-md-12:nth-child(2n) h3,
 .feature .col-md-12:nth-child(2n) p {
-    color: #030f27;
+    color: var(--primary-color);
 }
 
+@media (max-width: 1010px) {
+    .feature .feature-item{
+        min-height: 650px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .feature .feature-item{
+        min-height: 510px;
+    }
+}
 
 /*******************************/
 /********** About CSS **********/
@@ -622,15 +642,15 @@ a:focus {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #030f27;
+    color: var(--primary-color);
     border-radius: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
     transition: .3s;
 }
 
 .about .about-text a.btn:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 @media (max-width: 767.98px) {
@@ -668,13 +688,15 @@ a:focus {
     margin: 0;
     font-size: 60px;
     line-height: 60px;
-    background-image: linear-gradient(#ffffff, #fdbe33);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#ffffff, var(--secondary-color));
+    background-clip: text; /* Versi standar */
+    -webkit-background-clip: text; /* Versi untuk WebKit */
+    -webkit-text-fill-color: transparent; /* Membuat teks transparan */
 }
 
+
 .fact .fact-right .fact-icon [class^="flaticon-"]::before {
-    background-image: linear-gradient(#ffffff, #030f27);
+    background-image: linear-gradient(#ffffff, var(--primary-color));
 }
 
 .fact .fact-left,
@@ -696,17 +718,17 @@ a:focus {
 }
 
 .fact .fact-left {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 .fact .fact-right {
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 .fact .fact-left h2 {
-    color: #fdbe33;
+    color: var(--secondary-color);
 }
 
 
@@ -763,7 +785,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #030f27;
+    background: var(--primary-color);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -775,7 +797,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
-    color: #fdbe33;
+    color: var(--secondary-color);
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -792,8 +814,8 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 100;
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 0;
     transition: .3s;
 }
@@ -844,7 +866,7 @@ a:focus {
     display: block;
     width: 100px;
     height: 100px;
-    background: #fdbe33;
+    background: var(--secondary-color);
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -859,13 +881,13 @@ a:focus {
     display: block;
     width: 100px;
     height: 100px;
-    background: #fdbe33;
+    background: var(--secondary-color);
     border-radius: 50%;
     transition: all 200ms;
 }
 
 .video .btn-play:hover:after {
-    background-color: darken(#fdbe33, 10%);
+    background-color: darken(var(--secondary-color), 10%);
 }
 
 .video .btn-play img {
@@ -882,7 +904,7 @@ a:focus {
     z-index: 3;
     width: 0;
     height: 0;
-    border-left: 32px solid #030f27;
+    border-left: 32px solid var(--primary-color);
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
 }
@@ -951,14 +973,14 @@ a:focus {
     position: relative;
     padding: 25px 15px;
     text-align: center;
-    background: #030f27;
+    background: var(--primary-color);
     transition: .5s;
 }
 
 .team .team-text h2 {
     font-size: 20px;
     font-weight: 600;
-    color: #fdbe33;
+    color: var(--secondary-color);
     transition: .5s;
 }
 
@@ -968,11 +990,11 @@ a:focus {
 }
 
 .team .team-item:hover .team-text {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .team .team-item:hover .team-text h2 {
-    color: #030f27;
+    color: var(--primary-color);
     letter-spacing: 1px;
 }
 
@@ -1043,7 +1065,7 @@ a:focus {
     height: 100%;
     top: 0;
     left: calc(50% - .5px);
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .faqs #accordion-1 {
@@ -1089,7 +1111,7 @@ a:focus {
     display: block;
     padding: 10px 25px;
     width: 100%;
-    color: #121518;
+    color: var(--primary-color);
     font-size: 16px;
     line-height: 40px;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -1097,14 +1119,14 @@ a:focus {
 }
 
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"] {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .faqs .card-header [data-toggle="collapse"]:after {
     font-family: 'font Awesome 5 Free';
     content: "\f067";
     float: right;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 12px;
     font-weight: 900;
     transition: .5s;
@@ -1114,7 +1136,7 @@ a:focus {
     font-family: 'font Awesome 5 Free';
     content: "\f068";
     float: right;
-    color: #030f27;
+    color: var(--primary-color);
     font-size: 12px;
     font-weight: 900;
     transition: .5s;
@@ -1136,89 +1158,21 @@ a:focus {
     position: relative;
     margin: 45px 0;
     padding: 90px 0;
-    text-align: center;
-    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(../img/RIS-bg.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.testimonial .container {
-    max-width: 760px;
-}
+
 
 .about-page .testimonial {
     padding-bottom: 90px;
 }
 
-.testimonial .testimonial-slider-nav {
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
-}
 
-.testimonial .testimonial-slider-nav .slick-slide {
-    position: relative;
-    opacity: 0;
-    transition: .5s;
-}
 
-.testimonial .testimonial-slider-nav .slick-active {
-    opacity: 1;
-    transform: scale(1.3);
-}
-
-.testimonial .testimonial-slider-nav .slick-center {
-    transform: scale(1.8);
-    z-index: 1;
-}
-
-.testimonial .testimonial-slider-nav .slick-slide img {
-    position: relative;
-    display: block;
-    margin-top: 37px;
-    width: 100%;
-    height: auto;
-    border-radius: 100px;
-}
-
-.testimonial .testimonial-slider {
-    position: relative;
-    margin-top: 15px;
-    padding-top: 50px;
-}
-
-.testimonial .testimonial-slider::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 50px;
-    top: 0;
-    left: calc(50% - 30px);
-    background: url(../img/quote.png) top center no-repeat;
-}
-
-.testimonial .testimonial-slider h3 {
-    color: #fdbe33;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.testimonial .testimonial-slider h4 {
-    font-size: 14px;
-    font-weight: 300;
-    color: #ffffff;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.testimonial .testimonial-slider p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0;
-}
 
 
 /*******************************/
@@ -1250,7 +1204,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #030f27;
+    background: var(--primary-color);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1262,7 +1216,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 18px;
     font-weight: 700;
-    color: #fdbe33;
+    color: var(--secondary-color);
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -1279,8 +1233,8 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 100;
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 0;
     transition: .3s;
 }
@@ -1302,7 +1256,7 @@ a:focus {
     height: 1px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .blog .blog-meta p {
@@ -1312,7 +1266,7 @@ a:focus {
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
-    color: #666666;
+    color: var(--primary-color);
 }
 
 .blog .blog-meta p a {
@@ -1331,15 +1285,15 @@ a:focus {
 }
 
 .blog .pagination .page-link {
-    color: #030f27;
+    color: var(--primary-color);
     border-radius: 0;
-    border-color: #fdbe33;
+    border-color: var(--secondary-color);
 }
 
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 .blog .pagination .disabled .page-link {
@@ -1377,13 +1331,13 @@ a:focus {
     padding: 7px 15px;
     font-size: 14px;
     font-weight: 400;
-    color: #666666;
+    color: var(--primary-color);
     border: 1px solid #dddddd;
 }
 
 .single .single-tags a:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 .single .single-bio {
@@ -1496,16 +1450,16 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
     font-size: 16px;
     transition: .3s;
 }
 
 .single .related-slider .owl-nav .owl-prev:hover,
 .single .related-slider .owl-nav .owl-next:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 .single .single-comment {
@@ -1562,13 +1516,13 @@ a:focus {
 .single .comment-text .btn {
     padding: 3px 10px;
     font-size: 14px;
-    color: #030f27;
+    color: var(--primary-color);
     background: #dddddd;
     border-radius: 0;
 }
 
 .single .comment-text .btn:hover {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .single .comment-form {
@@ -1597,13 +1551,13 @@ a:focus {
 
 .single .comment-form .btn {
     padding: 15px 30px;
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 .single .comment-form .btn:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 
@@ -1641,7 +1595,7 @@ a:focus {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .sidebar .sidebar-widget .search-widget {
@@ -1665,7 +1619,7 @@ a:focus {
     height: 40px;
     padding: 0;
     font-size: 25px;
-    color: #fdbe33;
+    color: var(--secondary-color);
     background: none;
     border-radius: 0;
     border: none;
@@ -1673,7 +1627,7 @@ a:focus {
 }
 
 .sidebar .search-widget .btn:hover {
-    color: #030f27;
+    color: var(--primary-color);
 }
 
 .sidebar .sidebar-widget .recent-post {
@@ -1685,15 +1639,15 @@ a:focus {
 }
 
 .sidebar .tab-post .nav.nav-pills .nav-link {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
     border-radius: 0;
 }
 
 .sidebar .tab-post .nav.nav-pills .nav-link:hover,
 .sidebar .tab-post .nav.nav-pills .nav-link.active {
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 .sidebar .tab-post .tab-content {
@@ -1733,12 +1687,11 @@ a:focus {
     content: '\f105';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    color: #fdbe33;
+    color: var(--secondary-color);
     left: 1px;
 }
 
 .sidebar .category-widget ul li span {
-    display: inline-block;
     float: right;
 }
 
@@ -1753,13 +1706,13 @@ a:focus {
     padding: 7px 15px;
     font-size: 14px;
     font-weight: 400;
-    color: #666666;
+    color: var(--primary-color);
     border: 1px solid #dddddd;
 }
 
 .single .tag-widget a:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 .sidebar .image-widget {
@@ -1800,20 +1753,20 @@ a:focus {
     display: inline-block;
     margin: 5px;
     padding: 8px 15px;
-    color: #030f27;
+    color: var(--primary-color);
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
     border: none;
     transition: .3s;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #030f27;
-    color: #fdbe33;
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .portfolio .load-more {
@@ -1827,8 +1780,8 @@ a:focus {
 }
 
 .portfolio .load-more .btn:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 .portfolio .portfolio-warp {
@@ -1880,7 +1833,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #030f27;
+    background: var(--primary-color);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1892,7 +1845,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
-    color: #fdbe33;
+    color: var(--secondary-color);
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
@@ -1909,7 +1862,7 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 100;
-    color: #030f27;
+    color: var(--primary-color);
     background: #ffffff;
     border-radius: 0;
     transition: .3s;
@@ -1917,7 +1870,7 @@ a:focus {
 
 .portfolio .portfolio-warp:hover a.btn {
     color: #ffffff;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 
@@ -1936,11 +1889,11 @@ a:focus {
 }
 
 .contact .col-md-6:first-child {
-    background: #030f27;
+    background: var(--primary-color);
 }
 
 .contact .col-md-6:last-child {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .contact .contact-info {
@@ -1961,7 +1914,7 @@ a:focus {
 
 .contact .contact-item [class^="flaticon-"]::before {
     margin: 0;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 40px;
 }
 
@@ -1972,7 +1925,7 @@ a:focus {
 }
 
 .contact .contact-text h2 {
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 20px;
     font-weight: 600;
 }
@@ -2032,15 +1985,15 @@ a:focus {
     padding: 16px 30px;
     font-size: 16px;
     font-weight: 600;
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--primary-color);
     border: none;
     border-radius: 0;
     transition: .3s;
 }
 
 .contact .contact-form .btn:hover {
-    color: #030f27;
+    color: var(--primary-color);
     background: #ffffff;
 }
 
@@ -2058,7 +2011,7 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #030f27;
+    background: var(--primary-color);
     color: #ffffff;
 }
 
@@ -2075,7 +2028,7 @@ a:focus {
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
-    color: #fdbe33;
+    color: var(--secondary-color);
 }
 
 .footer h2::after {
@@ -2085,7 +2038,7 @@ a:focus {
     height: 2px;
     left: 0;
     bottom: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .footer .footer-link a {
@@ -2104,7 +2057,7 @@ a:focus {
 }
 
 .footer .footer-link a:hover {
-    color: #fdbe33;
+    color: var(--secondary-color);
     letter-spacing: 1px;
 }
 
@@ -2134,12 +2087,12 @@ a:focus {
 }
 
 .footer .footer-social a:hover {
-    background: #fdbe33;
-    border-color: #fdbe33;
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .footer .footer-social a:hover i {
-    color: #030f27;
+    color: var(--primary-color);
 }
 
 .footer .newsletter .form {
@@ -2150,7 +2103,7 @@ a:focus {
 
 .footer .newsletter input {
     height: 50px;
-    border: 2px solid #121518;
+    border: 2px solid var(--primary-color);
     border-radius: 0;
 }
 
@@ -2163,16 +2116,16 @@ a:focus {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #fdbe33;
-    background: #121518;
+    color: var(--secondary-color);
+    background: var(--primary-color);
     border-radius: 0;
-    border: 2px solid #fdbe33;
+    border: 2px solid var(--secondary-color);
     transition: .3s;
 }
 
 .footer .newsletter .btn:hover {
-    color: #121518;
-    background: #fdbe33;
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 .footer .footer-menu .f-menu {
@@ -2193,7 +2146,7 @@ a:focus {
 }
 
 .footer .footer-menu .f-menu a:hover {
-    color: #fdbe33;
+    color: var(--secondary-color);
 }
 
 .footer .footer-menu .f-menu a:last-child {
@@ -2217,7 +2170,7 @@ a:focus {
 }
 
 .footer .copyright p a {
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-weight: 500;
     letter-spacing: 1px;
 }

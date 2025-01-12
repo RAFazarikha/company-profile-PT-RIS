@@ -1,15 +1,15 @@
 <div class="top-bar">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-12">
+            <div class="col-md-12">
                 <div class="logo">
                     <a href="index.html">
-                        <h1>Builderz</h1>
+                        <h1>PT. RIQKI INTIPRATAMA SINERGI</h1>
                         <!-- <img src="img/logo.jpg" alt="Logo"> -->
                     </a>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-7 d-none d-lg-block">
+            <!-- <div class="col-lg-8 col-md-7 d-none d-lg-block">
                 <div class="row">
                     <div class="col-4">
                         <div class="top-bar-item">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
