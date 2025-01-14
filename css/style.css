@@ -1158,7 +1158,7 @@ a:focus {
     position: relative;
     margin: 45px 0;
     padding: 90px 0;
-    background: linear-gradient(rgba(213, 215, 219, 0.9), rgba(213, 215, 219, 0.9)), url(../img/RIS-bg.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/RIS-bg.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
