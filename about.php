@@ -41,8 +41,8 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>Welcome to Rizki Intipratama Sinergy</p>
-                                <h2>Gateway To Global Energy</h2>
+                                <p>Welcome to Builderz</p>
+                                <h2>25 Years Experience</h2>
                             </div>
                             <div class="about-text">
                                 <p>
