@@ -41,24 +41,29 @@
                         <div class="col-md-6">
                             <div class="contact-info">
                                 <div class="contact-item">
-                                    <i class="flaticon-address"></i>
+                                    <a href="https://maps.app.goo.gl/QtSh2npcs1eMgroeA">
+                                        <i class="flaticon-address"></i>
+                                    </a>
                                     <div class="contact-text">
                                         <h2>Location</h2>
-                                        <p>123 Street, New York, USA</p>
+                                        <p class="mb-2">Jl. Balikpapan l, No 35. Gresik Kota baru, Gresik 61152 Jawa Timur Indonesia</p>
+                                        <p class="mb-2">Jl. Lidah kulon No 34 kec. Lakarsantri, surabaya, Jawa Timur Indonesia</p>
+                                        <p>Jl. Barong Raya I Lorong V No 11 Manggala, Kota Makassar. Sulawesi Selatan</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-call"></i>
                                     <div class="contact-text">
                                         <h2>Phone</h2>
-                                        <p>+012 345 67890</p>
+                                        <p>0815 1546 6619</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-send-mail"></i>
                                     <div class="contact-text">
                                         <h2>Email</h2>
-                                        <p>info@example.com</p>
+                                        <p class="mb-2">rizkiintipratamasinergi@gmail.com</p>
+                                        <p>saifuddin.zuhri099@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
