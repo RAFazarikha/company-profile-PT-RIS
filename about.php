@@ -69,29 +69,111 @@
             </div>
             <!-- About End -->
             
-           <!-- Vision, Mission, and Values Section -->
+            <!-- Vision, Mission, and Values Section -->
             <div class="vision-mission-values py-5">
                 <div class="container">
-                    <div class="section-header text-center mb-4">
+                    <div class="section-header text-center mb-4 mx-auto" style="max-width: 800px;">
                         <h2 class="mb-3">Visi dan Misi</h2>
-                        <p>
+                        <p style="font-size: 23px;">
                             PT RIS berkomitmen untuk memberikan serta meningkatkan kualitas layanan terbaik kepada pelanggan dan mitra bisnis.
                         </p>
-                        <p>
+                        <br>
+                        <p style="font-size: 23px;">
                             Komitmen PT RIS adalah untuk memasok energi sesuai kebutuhan pelanggan dengan jaminan distribusi yang lancar, serta kualitas dan volume yang terjamin di seluruh wilayah Indonesia.
                         </p>
                     </div>
+                </div>
+            </div>
 
-                    <div class="section-header text-center mb-4">
-                        <h2 class="mb-3">Values</h2>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Nasionalisme</strong> "Mengutamakan penjualan produk dalam negeri dan tenaga kerja lokal dalam menjalankan roda perusahaan."</li>
-                            <li class="list-group-item"><strong>Profesional</strong> "Menggunakan tenaga profesional, menjunjung tinggi etika bisnis yang baik, dan menghindari konflik kepentingan."</li>
-                            <li class="list-group-item"><strong>Transparansi</strong> "Memberikan informasi yang jelas dan terbuka kepada semua pihak sehingga pelanggan dan supplier merasa nyaman dan percaya."</li>
-                            <li class="list-group-item"><strong>Kemajuan Bersama</strong> "Menjaga keseimbangan dalam mencapai kemajuan bersama untuk karyawan, supplier, dan pelanggan."</li>
-                            <li class="list-group-item"><strong>Orientasi Pelanggan</strong> "Melayani pelanggan dengan menjaga kualitas, kuantitas, dan pengiriman tepat waktu menggunakan peralatan dan mobil tangki yang memenuhi standar keamanan industri Migas."</li>
-                            <li class="list-group-item"><strong>Perbaikan Proses Bisnis yang Terus Menerus:</strong> Melakukan perbaikan proses bisnis secara berkelanjutan untuk menghadapi perubahan kondisi bisnis.</li>
-                        </ul>
+
+
+            <!-- Values Start -->
+            <div class="faqs">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2>Values</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="accordion-1">
+                                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                                            Nasionalisme
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            "Mengutamakan penjualan produk dalam negeri dan tenaga kerja lokal dalam menjalankan roda perusahaan."
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                                            Profesional
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            "Menggunakan tenaga profesional, menjunjung tinggi etika bisnis yang baik, dan menghindari konflik kepentingan."
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
+                                            Transparansi
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            "Memberikan informasi yang jelas dan terbuka kepada semua pihak sehingga pelanggan dan supplier merasa nyaman dan percaya."
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="accordion-2">
+                                <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                            Kemajuan Bersama
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            "Menjaga keseimbangan dalam mencapai kemajuan bersama untuk karyawan, supplier, dan pelanggan."
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
+                                            Orientasi Pelanggan
+                                        </a>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            "Melayani pelanggan dengan menjaga kualitas, kuantitas, dan pengiriman tepat waktu menggunakan peralatan dan mobil tangki yang memenuhi standar keamanan industri Migas."
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
+                                            Perbaikan Proses Bisnis yang Terus Menerus
+                                        </a>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            "Melakukan perbaikan proses bisnis secara berkelanjutan untuk menghadapi perubahan kondisi bisnis."
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +184,9 @@
                     <div class="section-header text-center mb-4">
                         <h2 class="mb-3">LEGALS</h2>
                     </div>
-                    <div class="row align-items-start"">
+
+                    <div class="row align-items-start">
+
                         <!-- Left: Promotion Text -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
                             <div class="promo-text p-4">
@@ -122,6 +206,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- Fact Start -->
             <!-- <div class="fact">
