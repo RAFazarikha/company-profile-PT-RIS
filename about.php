@@ -97,16 +97,16 @@
             </div>
 
             <!-- Legal and Promotion Section -->
-            <div class="legal-promotion py-5 bg-light">
+            <div class="legal-promotion py-5">
                 <div class="container">
                     <div class="section-header text-center mb-4">
                         <h2 class="mb-3">LEGALS</h2>
                     </div>
-                    <div class="row align-items-center">
+                    <div class="row align-items-start"">
                         <!-- Left: Promotion Text -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="promo-text p-4 bg-white shadow-sm rounded">
-                                <p>
+                            <div class="promo-text p-4">
+                                <p style="text-align: justify;">
                                     Temukan solusi energi terbaik bersama PT Riqki Intipratama Sinergi! Dengan pengalaman, dedikasi, dan komitmen terhadap kualitas, kami hadir untuk memenuhi kebutuhan energi Anda dengan layanan terbaik, pengiriman tepat waktu, dan produk berkualitas tinggi. Dukungan armada modern dan standar keamanan yang ketat memastikan kepuasan Anda sebagai prioritas utama kami. Mari bersama kami, wujudkan kelancaran operasional bisnis Anda melalui layanan energi yang terpercaya dan berkelanjutan. Pilih PT RIS, mitra energi yang mengutamakan kebutuhan Anda dan selalu memberikan yang terbaik!
                                 </p>
                             </div>
@@ -114,7 +114,7 @@
 
                         <!-- Right: PDF Preview -->
                         <div class="col-lg-6">
-                            <div class="pdf-preview text-center p-4 bg-white shadow-sm rounded">
+                            <div class="pdf-preview text-center p-4">
                                 <iframe src="docs/PT-RIS-LEGALS.pdf" width="100%" height="400px" class="border rounded"></iframe>
                                 <p class="mt-3"><a class="btn btn-primary" href="docs/PT-RIS-LEGALS.pdf" target="_blank">Download Legal Documents</a></p>
                             </div>
