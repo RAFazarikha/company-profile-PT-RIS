@@ -1,15 +1,6 @@
 <div class="top-bar">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-                <div class="logo" >
-                    <a href="index.html">
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
-                        <h1>Rizki Intipratama Sinergy</h1>
-                    </a>
-                </div>
-            </div>
-            <!-- <div class="col-lg-3 col-md-7 d-none d-lg-block">
                 <div class="row">
                     <div class="col-4">
                         <div class="top-bar-item">

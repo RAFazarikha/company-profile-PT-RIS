@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Builderz - Construction Company Website Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Construction Company Website Template" name="keywords">
-        <meta content="Construction Company Website Template" name="description">
-
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <?php include 'component/head.php'; ?>
 
     <body>
         <div class="wrapper">
@@ -49,8 +24,8 @@
                     <div class="carousel-item active">
                         <img src="img/carousel-1.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
-                            <p class="animated fadeInRight">We Are Professional</p>
-                            <h1 class="animated fadeInLeft">For Your Dream Project</h1>
+                            <p class="animated fadeInRight">Powering Progress, Building Trust</p>
+                            <h1 class="animated fadeInLeft">RIS Opens the World to Energy</h1>
                             <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
                         </div>
                     </div>
@@ -58,8 +33,8 @@
                     <div class="carousel-item">
                         <img src="img/carousel-2.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
-                            <p class="animated fadeInRight">Professional Builder</p>
-                            <h1 class="animated fadeInLeft">We Build Your Home</h1>
+                            <p class="animated fadeInRight">Delivering Energy, Earning Confidence</p>
+                            <h1 class="animated fadeInLeft">Your Global Energy Gateway</h1>
                             <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
                         </div>
                     </div>
@@ -67,8 +42,8 @@
                     <div class="carousel-item">
                         <img src="img/carousel-3.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
-                            <p class="animated fadeInRight">We Are Trusted</p>
-                            <h1 class="animated fadeInLeft">For Your Dream Home</h1>
+                            <p class="animated fadeInRight">Fueling the Future, Driven by Trust</p>
+                            <h1 class="animated fadeInLeft">RIS Energizes the World</h1>
                             <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
                         </div>
                     </div>
@@ -92,34 +67,67 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
                             <div class="feature-item">
-                                <div class="feature-icon">
+                                <!-- <div class="feature-icon">
                                     <i class="flaticon-worker"></i>
-                                </div>
+                                </div> -->
                                 <div class="feature-text">
-                                    <h3>Expert Worker</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <h3>NASIONALISME</h3>
+                                    <p>PT RIS Mengutamakan penjualan produk dalam negeri dan tenaga kerja lokal dalam menjalankan roda perusahaan.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
                             <div class="feature-item">
-                                <div class="feature-icon">
+                                <!-- <div class="feature-icon">
                                     <i class="flaticon-building"></i>
-                                </div>
+                                </div> -->
                                 <div class="feature-text">
-                                    <h3>Quality Work</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <h3>PROFESSIONAL</h3>
+                                    <p>PT RIS Menggunakan tenaga - tenaga yang profesional, menjunjung tinggi etika bisnis yang baik dan menghindari konflik kepentingan.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
                             <div class="feature-item">
-                                <div class="feature-icon">
+                                <!-- <div class="feature-icon">
                                     <i class="flaticon-call"></i>
-                                </div>
+                                </div> -->
                                 <div class="feature-text">
-                                    <h3>24/7 Support</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <h3>TRANSPARANSI</h3>
+                                    <p>PT RIS Memberikan informasi yang jelas dan terbuka kepada semua pihak dalam menjalankan roda perusahaan sehingga baik pelanggan maupun supplier merasa nyaman dan percaya.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                                <!-- <div class="feature-icon">
+                                    <i class="flaticon-worker"></i>
+                                </div> -->
+                                <div class="feature-text">
+                                    <h3>KEMAJUAN BERSAMA</h3>
+                                    <p>Kemajuan perusahaan yang berkesinambungan merupakan kontribusi dari berbagai pihak, mulai dari karyawan, supplier dan pelanggan kami. Sehingga sangat penting bagi kami untuk menjaga keseimbangan dalam mencapai kemajuan bersama.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                                <!-- <div class="feature-icon">
+                                    <i class="flaticon-building"></i>
+                                </div> -->
+                                <div class="feature-text">
+                                    <h3>ORIENTASI PELANGGAN</h3>
+                                    <p>PT RIS melayani pelanggan dengan komitmen menjaga kualitas,kuantitas dan pola pengiriman yang tepat waktu dengan menggunakan peralatan dan mobil tangki yang memenuhi standar keamanan dan safety yang dipersyaratkan dalam industri Migas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                                <!-- <div class="feature-icon">
+                                    <i class="flaticon-call"></i>
+                                </div> -->
+                                <div class="feature-text">
+                                    <h3>PERBAIKAN PROSES BISNIS YANG TERUS MENERUS</h3>
+                                    <p>PT RIS senantiasa melakukan perbaikan proses bisnis secara berkelanjutan untuk menghadapi kondisi bisnis yang selalu berubah.</p>
                                 </div>
                             </div>
                         </div>
@@ -140,17 +148,17 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>Welcome to Builderz</p>
-                                <h2>25 Years Experience</h2>
+                                <p>Gateway to Global Energy</p>
+                                <h2>PT. RIQKI INTIPRATAMA SINERGI</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                PT Riqki Intipratama Sinergi adalah Perseroan Terbatas yang telah dikukuhkan pada tanggal 20 September 2024. NO KEMENHUKAM AHU 0200658.AH.01.11. Tahun 2024 dan NO NIB 2009240114055
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                    PT. RIS merupakan Perusahaan yang bergerak di bidang supplier bahan bakar Non-Subsidi minyak jenis B30, B35 HSD, MFO, LSFO, HSFO, DEX dan EURO5 yang memiliki komitmen untuk terus memberikan kualitas yang terbaik guna kepuasan mitra bisnis.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="about.php">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +168,7 @@
 
 
             <!-- Fact Start -->
-            <div class="fact">
+            <!-- <div class="fact">
                 <div class="container-fluid">
                     <div class="row counters">
                         <div class="col-md-6 fact-left wow slideInLeft">
@@ -209,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Fact End -->
 
 
@@ -217,103 +225,87 @@
             <div class="service">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Our Services</p>
-                        <h2>We Provide Services</h2>
+                        <p>Our Product</p>
+                        <h2>We Provide Products</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/service-1.jpg" alt="Image">
+                                    <img src="img/RIS-product-1.png" alt="Image">
                                     <div class="service-overlay">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                            Pencampuran 30% Biodiesel dengan 70% bahan bakar minyak jenis Solar, yang menghasilkan produk Biosolar B30.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>Building Construction</h3>
-                                    <a class="btn" href="img/service-1.jpg" data-lightbox="service">+</a>
+                                    <h3>B30 Solar Industri</h3>
+                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/service-2.jpg" alt="Image">
+                                    <img src="img/RIS-product-1.png" alt="Image">
                                     <div class="service-overlay">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                            Pencampuran 35 persen minyak sawit dan 65 persen solar. Tujuan dari program peluncuran ini adalah untuk meningkatkan pasokan supply energi secara berkelanjutan. Selain itu, keberadaannya juga sebagai upaya untuk menekan impor solar di tengah situasi global yang terancam krisis.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>House Renovation</h3>
-                                    <a class="btn" href="img/service-2.jpg" data-lightbox="service">+</a>
+                                    <h3>B35 High Speed Diesel</h3>
+                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/service-3.jpg" alt="Image">
+                                    <img src="img/RIS-product-1.png" alt="Image">
                                     <div class="service-overlay">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                            Bahan bakar untuk mesin diesel yang memiliki angka cetane tertinggi dibandingkan produk lainnya yaitu 53. Dengan menggunakan pertamina dex banyak manfaat yang didapatkan yaitu meningkatkan daya mesin, mesin lebih tahana lama serta lebih ramah lingkungan.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>Architecture Design</h3>
-                                    <a class="btn" href="img/service-3.jpg" data-lightbox="service">+</a>
+                                    <h3>Pertamina DEX</h3>
+                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/service-4.jpg" alt="Image">
+                                    <img src="img/RIS-product-1.png" alt="Image">
                                     <div class="service-overlay">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                            Merupakan salah satu jenis bahan bakar dari proses residu destilasi minyak bakar. Sifat dari MFO yaitu stabilitas, kekentalan, korosifitas, kebersihan, dan keselamatan.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>Interior Design</h3>
-                                    <a class="btn" href="img/service-4.jpg" data-lightbox="service">+</a>
+                                    <h3>MFO (Marine Fuel Oil)</h3>
+                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/service-5.jpg" alt="Image">
+                                    <img src="img/RIS-product-1.png" alt="Image">
                                     <div class="service-overlay">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        Merupakan jenis bahan bakar standar emisi yang ditetapkan oleh Uni Eropa untuk kendaraan bermotor, termasuk yang menggunakan solar industri. Standar emisi Euro 5 merupakan standar emisi yang berlaku sejak September 2009 dan merupakan kelanjutan dari Euro 4 yang diterapkan sejak 2005.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>Fixing & Support</h3>
-                                    <a class="btn" href="img/service-5.jpg" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-6.jpg" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>Painting</h3>
-                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">+</a>
+                                    <h3>Euro 5</h3>
+                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
@@ -324,7 +316,7 @@
 
 
             <!-- Video Start -->
-            <div class="video wow fadeIn" data-wow-delay="0.1s">
+            <!-- <div class="video wow fadeIn" data-wow-delay="0.1s">
                 <div class="container">
                     <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
                         <span></span>
@@ -339,19 +331,19 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>        
-                            <!-- 16:9 aspect ratio -->
+                            16:9 aspect ratio
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Video End -->
 
 
             <!-- Team Start -->
-            <div class="team">
+            <!-- <div class="team">
                 <div class="container">
                     <div class="section-header text-center">
                         <p>Our Team</p>
@@ -428,7 +420,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Team End -->
             
 
@@ -445,60 +437,60 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa saja jasa angkutan yang disediakan untuk kelancaran supplier?
                                         </a>
                                     </div>
                                     <div id="collapseOne" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Kami menyediakan jasa angkutan truk tangki, kapal charter dalam negeri dan luar negeri, serta dukungan armada untuk kebutuhan di darat maupun di laut.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            Lorem ipsum dolor sit amet?
+                                            Bagaimana PT. Riqki Intipratama Sinergi memastikan kualitas produk BBM yang disalurkan?
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT. Riqki Intipratama Sinergi mengedepankan mutu produk BBM yang memenuhi spesifikasi yang dikeluarkan oleh Direktorat Jenderal MIGAS sebagai penyalur resmi yang ditunjuk oleh Pertamina.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa saja wilayah yang dilayani oleh PT. Riqki Intipratama Sinergi dalam pemasaran produk BBM?
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT. Riqki Intipratama Sinergi melayani seluruh pulau Jawa, Madura, Bali, dan kini pulau Kalimantan, serta terus mengembangkan wilayah sesuai izin yang diberikan oleh Pertamina.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                                            Lorem ipsum dolor sit amet?
+                                            Bagaimana PT. Riqki Intipratama Sinergi melayani pengisian BBM di perairan?
                                         </a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Kami memiliki 3 unit Self Propelled Oil Barge (SPOB) kapal tangker dengan kapasitas masing-masing 500 kl yang dapat melayani pengisian BBM untuk kapal (bunker service) di seluruh perairan.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.5s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                                            Lorem ipsum dolor sit amet?
+                                            Sejak kapan PT Riqki Intipratama Sinergi melayani pembelian BBM industri dan bagaimana perkembangannya?
                                         </a>
                                     </div>
                                     <div id="collapseFive" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT Riqki Intipratama Sinergi telah melayani pembelian BBM industri sejak tahun 2015 dan mengalami pembaharuan pada tahun 2023, serta menjalani berbagai strategi penjualan dan perbaikan layanan.
                                         </div>
                                     </div>
                                 </div>
@@ -509,60 +501,60 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa komitmen PT Riqki Intipratama Sinergi terhadap pelanggan dan mitra bisnisnya?
                                         </a>
                                     </div>
                                     <div id="collapseSix" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT Riqki Intipratama Sinergi berkomitmen untuk memberikan dan meningkatkan kualitas layanan terbaik kepada pelanggan dan mitra bisnis, serta memastikan distribusi BBM yang lancar dengan kualitas dan volume yang terjamin di seluruh wilayah Indonesia.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                            Lorem ipsum dolor sit amet?
+                                            Siapa yang memimpin tim manajemen di PT Riqki Intipratama Sinergi?
                                         </a>
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Tim manajemen di PT Riqki Intipratama Sinergi dipimpin oleh Bapak Bambang Aliyanto.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa yang menjadi landasan setiap langkah yang diambil oleh tim manajemen PT Riqki Intipratama Sinergi?
                                         </a>
                                     </div>
                                     <div id="collapseEight" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Landasan setiap langkah yang diambil oleh tim manajemen PT Riqki Intipratama Sinergi adalah komitmen terhadap inovasi, efisiensi, dan kepuasan pelanggan.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa rencana PT Riqki Intipratama Sinergi terkait area layanan bahan bakar?
                                         </a>
                                     </div>
                                     <div id="collapseNine" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT Riqki Intipratama Sinergi berencana untuk memperluas area layanan bahan bakar Pertamina dan pemasaran langsung ke seluruh Indonesia.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.5s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                                            Lorem ipsum dolor sit amet?
+                                            Siapa saja klien potensial yang dilayani oleh PT Riqki Intipratama Sinergi?
                                         </a>
                                     </div>
                                     <div id="collapseTen" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Klien potensial yang dilayani oleh PT Riqki Intipratama Sinergi antara lain Waskita Karya Tbk, Wijaya Karya Tbk, Adhi Karya Tbk, PT Sosro, PT Nindya Karya, PT Brantas Abi Praya, PT Dua Putra Tbk, CV Kencana Jawara Linnovasi, CV Mekar Jaya Indotech, CV Naomi Nippon Energy, CV Intiprakarsa Sudimara, dan kapal besar dengan 360 mitra bisnis lainnya.
                                         </div>
                                     </div>
                                 </div>
@@ -575,12 +567,49 @@
 
 
             <!-- Testimonial Start -->
-            <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+            <div class="testimonial">
+                <div class="section-header text-center">
+                    <p>Our Partner</p>
+                    <h2>Partners and Client</h2>
+                </div>
+                <div class="container">
+                    <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-1" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/1.png" alt="Carousel Image">
+                            </div>
+    
+                            <div class="carousel-item">
+                                <img src="img/2.png" alt="Carousel Image">
+                            </div>
+    
+                            <div class="carousel-item">
+                                <img src="img/3.png" alt="Carousel Image">
+                            </div>
+                        </div>
+    
+                        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="testimonial-slider-nav">
-                                <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/RIS-logoklien-1.png" alt="Testimonial"></div>
                                 <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
                                 <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
                                 <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
@@ -638,12 +667,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Testimonial End -->
 
 
             <!-- Blog Start -->
-            <div class="blog">
+            <!-- <div class="blog">
                 <div class="container">
                     <div class="section-header text-center">
                         <p>Latest Blog</p>
@@ -712,7 +741,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Blog End -->
 
 
