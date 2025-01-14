@@ -38,7 +38,7 @@
                         <h2>Meet Our Engineer</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-1.jpg" alt="Team Image">
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-2.jpg" alt="Team Image">
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-3.jpg" alt="Team Image">
@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-4.jpg" alt="Team Image">
@@ -106,7 +106,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-1.jpg" alt="Team Image">
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-2.jpg" alt="Team Image">
@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-3.jpg" alt="Team Image">
@@ -157,7 +157,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-4.jpg" alt="Team Image">
