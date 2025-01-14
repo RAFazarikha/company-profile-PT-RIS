@@ -41,15 +41,21 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>Welcome to Builderz</p>
-                                <h2>25 Years Experience</h2>
+                                <p>Welcome to PT. RIQKI INTIPRATAMA SINERGI</p>
+                                <h2>Gateway To Global Energy</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    PT Riqki Intipratama Sinergi adalah Perseroan Terbatas yang telah dikukuhkan pada tanggal 20 September 2024. NO KEMENHUKAM AHU 0200658.AH.01.11. Tahun 2024 dan NO NIB 2009240114055
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                    PT. RIS merupakan Perusahaan yang bergerak di bidang supplier bahan bakar Non-Subsidi minyak jenis B30, B35 HSD, MFO, LSFO, HSFO, DEX dan EURO5 yang memiliki komitmen untuk terus memberikan kualitas yang terbaik guna kepuasan mitra bisnis.
+                                </p>
+                                <p>
+                                    Dengan menyalurkan produk yang sesuai dengan standar mutu dan kualitas Direktur Jendral Migas.
+                                </p>
+                                <p>
+                                    Untuk kelancaran supplier kami menyediakan jasa angkutan truk tangki, perkapal chapter dalam negeri dan luar negeri untuk mendukung kebutuhan kami dan mitra usaha kami menyiapkan dukungan armada untuk di darat maupun di laut.
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -61,7 +67,7 @@
             
             
             <!-- Fact Start -->
-            <div class="fact">
+            <!-- <div class="fact">
                 <div class="container-fluid">
                     <div class="row counters">
                         <div class="col-md-6 fact-left wow slideInLeft">
@@ -110,9 +116,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Fact End -->
-            
             
             <!-- FAQs Start -->
             <div class="faqs">
@@ -127,60 +132,60 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa saja jasa angkutan yang disediakan untuk kelancaran supplier?
                                         </a>
                                     </div>
                                     <div id="collapseOne" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Kami menyediakan jasa angkutan truk tangki, kapal charter dalam negeri dan luar negeri, serta dukungan armada untuk kebutuhan di darat maupun di laut.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            Lorem ipsum dolor sit amet?
+                                            Bagaimana PT. Riqki Intipratama Sinergi memastikan kualitas produk BBM yang disalurkan?
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT. Riqki Intipratama Sinergi mengedepankan mutu produk BBM yang memenuhi spesifikasi yang dikeluarkan oleh Direktorat Jenderal MIGAS sebagai penyalur resmi yang ditunjuk oleh Pertamina.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa saja wilayah yang dilayani oleh PT. Riqki Intipratama Sinergi dalam pemasaran produk BBM?
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT. Riqki Intipratama Sinergi melayani seluruh pulau Jawa, Madura, Bali, dan kini pulau Kalimantan, serta terus mengembangkan wilayah sesuai izin yang diberikan oleh Pertamina.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                                            Lorem ipsum dolor sit amet?
+                                            Bagaimana PT. Riqki Intipratama Sinergi melayani pengisian BBM di perairan?
                                         </a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Kami memiliki 3 unit Self Propelled Oil Barge (SPOB) kapal tangker dengan kapasitas masing-masing 500 kl yang dapat melayani pengisian BBM untuk kapal (bunker service) di seluruh perairan.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.5s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                                            Lorem ipsum dolor sit amet?
+                                            Sejak kapan PT Riqki Intipratama Sinergi melayani pembelian BBM industri dan bagaimana perkembangannya?
                                         </a>
                                     </div>
                                     <div id="collapseFive" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT Riqki Intipratama Sinergi telah melayani pembelian BBM industri sejak tahun 2015 dan mengalami pembaharuan pada tahun 2023, serta menjalani berbagai strategi penjualan dan perbaikan layanan.
                                         </div>
                                     </div>
                                 </div>
@@ -191,60 +196,60 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa komitmen PT Riqki Intipratama Sinergi terhadap pelanggan dan mitra bisnisnya?
                                         </a>
                                     </div>
                                     <div id="collapseSix" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT Riqki Intipratama Sinergi berkomitmen untuk memberikan dan meningkatkan kualitas layanan terbaik kepada pelanggan dan mitra bisnis, serta memastikan distribusi BBM yang lancar dengan kualitas dan volume yang terjamin di seluruh wilayah Indonesia.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                            Lorem ipsum dolor sit amet?
+                                            Siapa yang memimpin tim manajemen di PT Riqki Intipratama Sinergi?
                                         </a>
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Tim manajemen di PT Riqki Intipratama Sinergi dipimpin oleh Bapak Bambang Aliyanto.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa yang menjadi landasan setiap langkah yang diambil oleh tim manajemen PT Riqki Intipratama Sinergi?
                                         </a>
                                     </div>
                                     <div id="collapseEight" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Landasan setiap langkah yang diambil oleh tim manajemen PT Riqki Intipratama Sinergi adalah komitmen terhadap inovasi, efisiensi, dan kepuasan pelanggan.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                                            Lorem ipsum dolor sit amet?
+                                            Apa rencana PT Riqki Intipratama Sinergi terkait area layanan bahan bakar?
                                         </a>
                                     </div>
                                     <div id="collapseNine" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            PT Riqki Intipratama Sinergi berencana untuk memperluas area layanan bahan bakar Pertamina dan pemasaran langsung ke seluruh Indonesia.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.5s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                                            Lorem ipsum dolor sit amet?
+                                            Siapa saja klien potensial yang dilayani oleh PT Riqki Intipratama Sinergi?
                                         </a>
                                     </div>
                                     <div id="collapseTen" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Klien potensial yang dilayani oleh PT Riqki Intipratama Sinergi antara lain Waskita Karya Tbk, Wijaya Karya Tbk, Adhi Karya Tbk, PT Sosro, PT Nindya Karya, PT Brantas Abi Praya, PT Dua Putra Tbk, CV Kencana Jawara Linnovasi, CV Mekar Jaya Indotech, CV Naomi Nippon Energy, CV Intiprakarsa Sudimara, dan kapal besar dengan 360 mitra bisnis lainnya.
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +259,6 @@
                 </div>
             </div>
             <!-- FAQs End -->
-
 
             <!-- Footer Start -->
             <?php include 'component/footer.php'; ?>
