@@ -38,14 +38,14 @@
                         <h2>Meet Our Engineer</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-1.jpg" alt="Team Image">
+                                    <img src="img/team-11.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Adam Phillips</h2>
-                                    <p>CEO & Founder</p>
+                                    <h2>Rizki Dewayani. SE</h2>
+                                    <p>Komisaris</p>
                                 </div>
                                 <div class="team-social">
                                     <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
@@ -55,14 +55,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-2.jpg" alt="Team Image">
+                                    <img src="img/team-12.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Dylan Adams</h2>
-                                    <p>Civil Engineer</p>
+                                    <h2>Bambang Aliyanto. SH</h2>
+                                    <p>Direktur</p>
                                 </div>
                                 <div class="team-social">
                                     <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
@@ -72,14 +72,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-3.jpg" alt="Team Image">
+                                    <img src="img/team-13.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Jhon Doe</h2>
-                                    <p>Interior Designer</p>
+                                    <h2>Nur adzim</h2>
+                                    <p>Wakil Direktur</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-14.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Suwandi. SE</h2>
+                                    <p>Operasional</p>
                                 </div>
                                 <div class="team-social">
                                     <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
@@ -89,14 +106,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-4.jpg" alt="Team Image">
+                                    <img src="img/team-15.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Josh Dunn</h2>
-                                    <p>Painter</p>
+                                    <h2>Bondet Indarto</h2>
+                                    <p>Marketing</p>
                                 </div>
                                 <div class="team-social">
                                     <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
@@ -106,65 +123,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-1.jpg" alt="Team Image">
+                                    <img src="img/team-16.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Adam Phillips</h2>
-                                    <p>CEO & Founder</p>
-                                </div>
-                                <div class="team-social">
-                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-2.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Dylan Adams</h2>
-                                    <p>Civil Engineer</p>
-                                </div>
-                                <div class="team-social">
-                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-3.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Jhon Doe</h2>
-                                    <p>Interior Designer</p>
-                                </div>
-                                <div class="team-social">
-                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-4.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Josh Dunn</h2>
-                                    <p>Painter</p>
+                                    <h2>Saifuddin Zuhri. SE</h2>
+                                    <p>Supervisor</p>
                                 </div>
                                 <div class="team-social">
                                     <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
