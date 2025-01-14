@@ -21,8 +21,8 @@
                             <h2>About Us</h2>
                         </div>
                         <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">About Us</a>
+                            <a href="index.php">Home</a>
+                            <a href="about.php">About Us</a>
                         </div>
                     </div>
                 </div>
@@ -33,6 +33,7 @@
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
+                    <!-- About Section -->
                     <div class="row align-items-center">
                         <div class="col-lg-5 col-md-6">
                             <div class="about-img">
@@ -46,16 +47,19 @@
                             </div>
                             <div class="about-text">
                                 <p>
-                                    PT Riqki Intipratama Sinergi adalah Perseroan Terbatas yang telah dikukuhkan pada tanggal 20 September 2024. NO KEMENHUKAM AHU 0200658.AH.01.11. Tahun 2024 dan NO NIB 2009240114055
+                                    PT Riqki Intipratama Sinergi adalah Perseroan Terbatas yang telah dikukuhkan pada tanggal 20 September 2024. 
+                                    NO KEMENHUKAM AHU 0200658.AH.01.11. Tahun 2024 dan NO NIB 2009240114055.
                                 </p>
                                 <p>
-                                    PT. RIS merupakan Perusahaan yang bergerak di bidang supplier bahan bakar Non-Subsidi minyak jenis B30, B35 HSD, MFO, LSFO, HSFO, DEX dan EURO5 yang memiliki komitmen untuk terus memberikan kualitas yang terbaik guna kepuasan mitra bisnis.
+                                    PT. RIS merupakan perusahaan yang bergerak di bidang supplier bahan bakar Non-Subsidi minyak jenis B30, B35, HSD, MFO, LSFO, HSFO, DEX, dan EURO5 
+                                    yang memiliki komitmen untuk terus memberikan kualitas yang terbaik guna kepuasan mitra bisnis.
                                 </p>
                                 <p>
                                     Dengan menyalurkan produk yang sesuai dengan standar mutu dan kualitas Direktur Jendral Migas.
                                 </p>
                                 <p>
-                                    Untuk kelancaran supplier kami menyediakan jasa angkutan truk tangki, perkapal chapter dalam negeri dan luar negeri untuk mendukung kebutuhan kami dan mitra usaha kami menyiapkan dukungan armada untuk di darat maupun di laut.
+                                    Untuk kelancaran supplier, kami menyediakan jasa angkutan truk tangki, perkapalan charter dalam negeri dan luar negeri untuk mendukung kebutuhan kami 
+                                    dan mitra usaha, serta menyiapkan dukungan armada untuk di darat maupun di laut.
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -65,7 +69,60 @@
             </div>
             <!-- About End -->
             
-            
+           <!-- Vision, Mission, and Values Section -->
+            <div class="vision-mission-values py-5">
+                <div class="container">
+                    <div class="section-header text-center mb-4">
+                        <h2 class="mb-3">Visi dan Misi</h2>
+                        <p>
+                            PT RIS berkomitmen untuk memberikan serta meningkatkan kualitas layanan terbaik kepada pelanggan dan mitra bisnis.
+                        </p>
+                        <p>
+                            Komitmen PT RIS adalah untuk memasok energi sesuai kebutuhan pelanggan dengan jaminan distribusi yang lancar, serta kualitas dan volume yang terjamin di seluruh wilayah Indonesia.
+                        </p>
+                    </div>
+
+                    <div class="section-header text-center mb-4">
+                        <h2 class="mb-3">Values</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Nasionalisme</strong> "Mengutamakan penjualan produk dalam negeri dan tenaga kerja lokal dalam menjalankan roda perusahaan."</li>
+                            <li class="list-group-item"><strong>Profesional</strong> "Menggunakan tenaga profesional, menjunjung tinggi etika bisnis yang baik, dan menghindari konflik kepentingan."</li>
+                            <li class="list-group-item"><strong>Transparansi</strong> "Memberikan informasi yang jelas dan terbuka kepada semua pihak sehingga pelanggan dan supplier merasa nyaman dan percaya."</li>
+                            <li class="list-group-item"><strong>Kemajuan Bersama</strong> "Menjaga keseimbangan dalam mencapai kemajuan bersama untuk karyawan, supplier, dan pelanggan."</li>
+                            <li class="list-group-item"><strong>Orientasi Pelanggan</strong> "Melayani pelanggan dengan menjaga kualitas, kuantitas, dan pengiriman tepat waktu menggunakan peralatan dan mobil tangki yang memenuhi standar keamanan industri Migas."</li>
+                            <li class="list-group-item"><strong>Perbaikan Proses Bisnis yang Terus Menerus:</strong> Melakukan perbaikan proses bisnis secara berkelanjutan untuk menghadapi perubahan kondisi bisnis.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal and Promotion Section -->
+            <div class="legal-promotion py-5 bg-light">
+                <div class="container">
+                    <div class="section-header text-center mb-4">
+                        <h2 class="mb-3">LEGALS</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <!-- Left: Promotion Text -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="promo-text p-4 bg-white shadow-sm rounded">
+                                <p>
+                                    Temukan solusi energi terbaik bersama PT Riqki Intipratama Sinergi! Dengan pengalaman, dedikasi, dan komitmen terhadap kualitas, kami hadir untuk memenuhi kebutuhan energi Anda dengan layanan terbaik, pengiriman tepat waktu, dan produk berkualitas tinggi. Dukungan armada modern dan standar keamanan yang ketat memastikan kepuasan Anda sebagai prioritas utama kami. Mari bersama kami, wujudkan kelancaran operasional bisnis Anda melalui layanan energi yang terpercaya dan berkelanjutan. Pilih PT RIS, mitra energi yang mengutamakan kebutuhan Anda dan selalu memberikan yang terbaik!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right: PDF Preview -->
+                        <div class="col-lg-6">
+                            <div class="pdf-preview text-center p-4 bg-white shadow-sm rounded">
+                                <iframe src="docs/PT-RIS-LEGALS.pdf" width="100%" height="400px" class="border rounded"></iframe>
+                                <p class="mt-3"><a class="btn btn-primary" href="docs/PT-RIS-LEGALS.pdf" target="_blank">Download Legal Documents</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Fact Start -->
             <!-- <div class="fact">
                 <div class="container-fluid">
@@ -120,7 +177,7 @@
             <!-- Fact End -->
             
             <!-- FAQs Start -->
-            <div class="faqs">
+            <!-- <div class="faqs">
                 <div class="container">
                     <div class="section-header text-center">
                         <p>Frequently Asked Question</p>
@@ -257,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- FAQs End -->
 
             <!-- Footer Start -->
