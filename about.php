@@ -184,7 +184,9 @@
                     <div class="section-header text-center mb-4">
                         <h2 class="mb-3">LEGALS</h2>
                     </div>
+
                     <div class="row align-items-start">
+
                         <!-- Left: Promotion Text -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
                             <div class="promo-text p-4">
