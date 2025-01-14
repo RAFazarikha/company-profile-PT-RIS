@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-md-12">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <h1>PT. RIQKI INTIPRATAMA SINERGI</h1>
                         <!-- <img src="img/logo.jpg" alt="Logo"> -->
                     </a>
