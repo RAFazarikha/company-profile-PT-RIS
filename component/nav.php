@@ -17,7 +17,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                     <a href="about.php" class="nav-item nav-link <?= ($current_page == 'about.php') ? 'active' : '' ?>">About</a>
                     <a href="product.php" class="nav-item nav-link <?= ($current_page == 'product.php') ? 'active' : '' ?>">Product</a>
                     <a href="team.php" class="nav-item nav-link <?= ($current_page == 'team.php') ? 'active' : '' ?>">Team</a>
-                    <a href="portfolio.php" class="nav-item nav-link <?= ($current_page == 'portfolio.php') ? 'active' : '' ?>">Project</a>
+                    <!-- <a href="portfolio.php" class="nav-item nav-link <?= ($current_page == 'portfolio.php') ? 'active' : '' ?>">Project</a> -->
                     <!-- <div class="nav-item dropdown <?= in_array($current_page, ['blog.php', 'single.php']) ? 'active' : '' ?>">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu">
