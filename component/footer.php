@@ -52,22 +52,13 @@
             </div> -->
         </div>
     </div>
-    <div class="container footer-menu">
-        <div class="f-menu">
-            <a href="">Terms of use</a>
-            <a href="">Privacy policy</a>
-            <a href="">Cookies</a>
-            <a href="">Help</a>
-            <a href="">FQAs</a>
-        </div>
-    </div>
     <div class="container copyright">
         <div class="row">
             <div class="col-md-6">
-                <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                <p>&copy; COPYRIGHT BY CV KENCANA JAWARA INNOVASI</p>
             </div>
             <div class="col-md-6">
-                <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                <p>PT RIZKI INTIPRATAMA SINERGY COMPANY PROFILE 2024 </p>
             </div>
         </div>
     </div>

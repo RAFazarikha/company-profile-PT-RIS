@@ -52,7 +52,9 @@
                                     </div>
                                 </div>
                                 <div class="contact-item">
-                                    <i class="flaticon-call"></i>
+                                    <a href="https://api.whatsapp.com/send/?phone=6281515466619&text&type=phone_number&app_absent=0">
+                                        <i class="flaticon-call"></i>
+                                    </a>
                                     <div class="contact-text">
                                         <h2>Phone</h2>
                                         <p>0815 1546 6619</p>
