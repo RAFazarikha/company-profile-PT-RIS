@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <div class="logo">
                     <a href="index.php">
-                        <h1>PT. RIQKI INTIPRATAMA SINERGI</h1>
+                        <h1>PT. RIZKI INTIPRATAMA SINERGY</h1>
                         <!-- <img src="img/logo.jpg" alt="Logo"> -->
                     </a>
                 </div>

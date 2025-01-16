@@ -22,29 +22,26 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/carousel-1.jpg" alt="Carousel Image">
+                        <img src="img/RIS-image1.png" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">Powering Progress, Building Trust</p>
                             <h1 class="animated fadeInLeft">RIS Opens the World to Energy</h1>
-                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <img src="img/carousel-2.jpg" alt="Carousel Image">
+                        <img src="img/RIS-image2.png" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">Delivering Energy, Earning Confidence</p>
                             <h1 class="animated fadeInLeft">Your Global Energy Gateway</h1>
-                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <img src="img/carousel-3.jpg" alt="Carousel Image">
+                        <img src="img/RIS-image3.png" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">Fueling the Future, Driven by Trust</p>
                             <h1 class="animated fadeInLeft">RIS Energizes the World</h1>
-                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
                         </div>
                     </div>
                 </div>
@@ -143,17 +140,17 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5 col-md-6">
                             <div class="about-img">
-                                <img src="img/about.jpg" alt="Image">
+                                <img src="img/RIS-image4.png" alt="Image">
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
                                 <p>Gateway to Global Energy</p>
-                                <h2>PT. RIQKI INTIPRATAMA SINERGI</h2>
+                                <h2>PT. RIZKI INTIPRATAMA SINERGY</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                PT Riqki Intipratama Sinergi adalah Perseroan Terbatas yang telah dikukuhkan pada tanggal 20 September 2024. NO KEMENHUKAM AHU 0200658.AH.01.11. Tahun 2024 dan NO NIB 2009240114055
+                                PT. Rizki Intipratama Sinergy adalah Perseroan Terbatas yang telah dikukuhkan pada tanggal 20 September 2024. NO KEMENHUKAM AHU 0200658.AH.01.11. Tahun 2024 dan NO NIB 2009240114055
                                 </p>
                                 <p>
                                     PT. RIS merupakan Perusahaan yang bergerak di bidang supplier bahan bakar Non-Subsidi minyak jenis B30, B35 HSD, MFO, LSFO, HSFO, DEX dan EURO5 yang memiliki komitmen untuk terus memberikan kualitas yang terbaik guna kepuasan mitra bisnis.
@@ -449,31 +446,31 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            Bagaimana PT. Riqki Intipratama Sinergi memastikan kualitas produk BBM yang disalurkan?
+                                            Bagaimana PT. Rizki Intipratama Sinergy memastikan kualitas produk BBM yang disalurkan?
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            PT. Riqki Intipratama Sinergi mengedepankan mutu produk BBM yang memenuhi spesifikasi yang dikeluarkan oleh Direktorat Jenderal MIGAS sebagai penyalur resmi yang ditunjuk oleh Pertamina.
+                                            PT. Rizki Intipratama Sinergy mengedepankan mutu produk BBM yang memenuhi spesifikasi yang dikeluarkan oleh Direktorat Jenderal MIGAS sebagai penyalur resmi yang ditunjuk oleh Pertamina.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                            Apa saja wilayah yang dilayani oleh PT. Riqki Intipratama Sinergi dalam pemasaran produk BBM?
+                                            Apa saja wilayah yang dilayani oleh PT. Rizki Intipratama Sinergy dalam pemasaran produk BBM?
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            PT. Riqki Intipratama Sinergi melayani seluruh pulau Jawa, Madura, Bali, dan kini pulau Kalimantan, serta terus mengembangkan wilayah sesuai izin yang diberikan oleh Pertamina.
+                                            PT. Rizki Intipratama Sinergy melayani seluruh pulau Jawa, Madura, Bali, dan kini pulau Kalimantan, serta terus mengembangkan wilayah sesuai izin yang diberikan oleh Pertamina.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                                            Bagaimana PT. Riqki Intipratama Sinergi melayani pengisian BBM di perairan?
+                                            Bagaimana PT. Rizki Intipratama Sinergy melayani pengisian BBM di perairan?
                                         </a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion-1">
@@ -485,12 +482,12 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.5s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                                            Sejak kapan PT Riqki Intipratama Sinergi melayani pembelian BBM industri dan bagaimana perkembangannya?
+                                            Sejak kapan PT Rizki Intipratama Sinergy melayani pembelian BBM industri dan bagaimana perkembangannya?
                                         </a>
                                     </div>
                                     <div id="collapseFive" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            PT Riqki Intipratama Sinergi telah melayani pembelian BBM industri sejak tahun 2015 dan mengalami pembaharuan pada tahun 2023, serta menjalani berbagai strategi penjualan dan perbaikan layanan.
+                                            PT Rizki Intipratama Sinergy telah melayani pembelian BBM industri sejak tahun 2015 dan mengalami pembaharuan pada tahun 2023, serta menjalani berbagai strategi penjualan dan perbaikan layanan.
                                         </div>
                                     </div>
                                 </div>
@@ -501,60 +498,60 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                            Apa komitmen PT Riqki Intipratama Sinergi terhadap pelanggan dan mitra bisnisnya?
+                                            Apa komitmen PT Rizki Intipratama Sinergy terhadap pelanggan dan mitra bisnisnya?
                                         </a>
                                     </div>
                                     <div id="collapseSix" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            PT Riqki Intipratama Sinergi berkomitmen untuk memberikan dan meningkatkan kualitas layanan terbaik kepada pelanggan dan mitra bisnis, serta memastikan distribusi BBM yang lancar dengan kualitas dan volume yang terjamin di seluruh wilayah Indonesia.
+                                            PT Rizki Intipratama Sinergy berkomitmen untuk memberikan dan meningkatkan kualitas layanan terbaik kepada pelanggan dan mitra bisnis, serta memastikan distribusi BBM yang lancar dengan kualitas dan volume yang terjamin di seluruh wilayah Indonesia.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                            Siapa yang memimpin tim manajemen di PT Riqki Intipratama Sinergi?
+                                            Siapa yang memimpin tim manajemen di PT Rizki Intipratama Sinergy?
                                         </a>
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Tim manajemen di PT Riqki Intipratama Sinergi dipimpin oleh Bapak Bambang Aliyanto.
+                                            Tim manajemen di PT Rizki Intipratama Sinergy dipimpin oleh Bapak Bambang Aliyanto.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                            Apa yang menjadi landasan setiap langkah yang diambil oleh tim manajemen PT Riqki Intipratama Sinergi?
+                                            Apa yang menjadi landasan setiap langkah yang diambil oleh tim manajemen PT Rizki Intipratama Sinergy?
                                         </a>
                                     </div>
                                     <div id="collapseEight" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Landasan setiap langkah yang diambil oleh tim manajemen PT Riqki Intipratama Sinergi adalah komitmen terhadap inovasi, efisiensi, dan kepuasan pelanggan.
+                                            Landasan setiap langkah yang diambil oleh tim manajemen PT Rizki Intipratama Sinergy adalah komitmen terhadap inovasi, efisiensi, dan kepuasan pelanggan.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                                            Apa rencana PT Riqki Intipratama Sinergi terkait area layanan bahan bakar?
+                                            Apa rencana PT Rizki Intipratama Sinergy terkait area layanan bahan bakar?
                                         </a>
                                     </div>
                                     <div id="collapseNine" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            PT Riqki Intipratama Sinergi berencana untuk memperluas area layanan bahan bakar Pertamina dan pemasaran langsung ke seluruh Indonesia.
+                                            PT Rizki Intipratama Sinergy berencana untuk memperluas area layanan bahan bakar Pertamina dan pemasaran langsung ke seluruh Indonesia.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.5s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                                            Siapa saja klien potensial yang dilayani oleh PT Riqki Intipratama Sinergi?
+                                            Siapa saja klien potensial yang dilayani oleh PT Rizki Intipratama Sinergy?
                                         </a>
                                     </div>
                                     <div id="collapseTen" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Klien potensial yang dilayani oleh PT Riqki Intipratama Sinergi antara lain Waskita Karya Tbk, Wijaya Karya Tbk, Adhi Karya Tbk, PT Sosro, PT Nindya Karya, PT Brantas Abi Praya, PT Dua Putra Tbk, CV Kencana Jawara Linnovasi, CV Mekar Jaya Indotech, CV Naomi Nippon Energy, CV Intiprakarsa Sudimara, dan kapal besar dengan 360 mitra bisnis lainnya.
+                                            Klien potensial yang dilayani oleh PT Rizki Intipratama Sinergy antara lain Waskita Karya Tbk, Wijaya Karya Tbk, Adhi Karya Tbk, PT Sosro, PT Nindya Karya, PT Brantas Abi Praya, PT Dua Putra Tbk, CV Kencana Jawara Linnovasi, CV Mekar Jaya Indotech, CV Naomi Nippon Energy, CV Intiprakarsa Sudimara, dan kapal besar dengan 360 mitra bisnis lainnya.
                                         </div>
                                     </div>
                                 </div>

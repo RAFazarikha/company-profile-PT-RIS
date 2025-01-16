@@ -41,7 +41,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-11.png" alt="Team Image">
+                                    <img src="img/RIS-team1.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Rizki Dewayani. SE</h2>
@@ -58,7 +58,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-12.png" alt="Team Image">
+                                    <img src="img/RIS-team2.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Bambang Aliyanto. SH</h2>
@@ -75,7 +75,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-13.png" alt="Team Image">
+                                    <img src="img/RIS-team3.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Nur adzim</h2>
@@ -92,7 +92,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-14.png" alt="Team Image">
+                                    <img src="img/RIS-team4.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Suwandi. SE</h2>
@@ -109,7 +109,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-15.png" alt="Team Image">
+                                    <img src="img/RIS-team5.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Bondet Indarto</h2>
@@ -126,7 +126,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-16.png" alt="Team Image">
+                                    <img src="img/RIS-team6.png" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Saifuddin Zuhri. SE</h2>

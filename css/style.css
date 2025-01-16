@@ -653,6 +653,24 @@ a:focus {
     background: var(--primary-color);
 }
 
+.legal-promotion .pdf-preview a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    border-radius: 0;
+    background: var(--secondary-color);
+    transition: .3s;
+}
+
+.legal-promotion .pdf-preview a.btn:hover {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+
 @media (max-width: 767.98px) {
     .about .about-img {
         margin-bottom: 30px;
