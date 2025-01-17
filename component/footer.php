@@ -1,7 +1,7 @@
 <div class="footer wow fadeIn" data-wow-delay="0.3s">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-6 col-lg-8">
                 <div class="footer-contact">
                     <h2>Office Contact</h2>
                     <p><i class="fa fa-map-marker-alt"></i>Jl. Balikpapan I, No 35. Gresik Kota baru, Gresik 61152 Jawa Timur Indonesia</p>
@@ -29,7 +29,7 @@
                     <a href="">Painting</a>
                 </div>
             </div> -->
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-6 col-lg-4">
                 <div class="footer-link">
                     <h2>Useful Pages</h2>
                     <a href="about.php">About Us</a>
