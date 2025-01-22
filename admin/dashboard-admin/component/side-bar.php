@@ -1,13 +1,14 @@
+<?php
+    $current_page = $_SERVER['PHP_SELF']; // Mendapatkan path halaman saat ini
+?>
+
 <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
             <!-- Sidebar user panel -->
             <div class="user-panel">
-                <div class="pull-left image">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
-                </div>
                 <div class="pull-left info">
-                <p>Alexander Pierce</p>
+                <p>Admin PT. Rizki Intipratama Sinergy</p>
 
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
@@ -25,16 +26,13 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="header">MAIN NAVIGATION</li>
-                <li class="active treeview">
-                <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                    <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-                </ul>
+                <li class="<?= ($current_page == '/admin/dashboard-admin/index.php') ? 'active' : '' ?>">
+                    <a href="\admin\dashboard-admin\index.php">
+                        <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                        <small class="label pull-right bg-yellow">  </small>
+                    </a>
                 </li>
-                <li class="treeview">
+                <!-- <li class="treeview">
                 <a href="#">
                     <i class="fa fa-files-o"></i>
                     <span>Layout Options</span>
@@ -105,14 +103,14 @@
                     <i class="fa fa-calendar"></i> <span>Calendar</span>
                     <small class="label pull-right bg-red">3</small>
                 </a>
+                </li> -->
+                <li class="<?= ($current_page == '/admin/dashboard-admin/pages/mailbox.php') ? 'active' : '' ?>">
+                    <a href="\admin\dashboard-admin\pages\mailbox.php">
+                        <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                        <small class="label pull-right bg-yellow">12</small>
+                    </a>
                 </li>
-                <li>
-                <a href="pages/mailbox/mailbox.html">
-                    <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                    <small class="label pull-right bg-yellow">12</small>
-                </a>
-                </li>
-                <li class="treeview">
+                <!-- <li class="treeview">
                 <a href="#">
                     <i class="fa fa-folder"></i> <span>Examples</span>
                     <i class="fa fa-angle-left pull-right"></i>
@@ -149,12 +147,12 @@
                     </li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
                 </ul>
-                </li>
-                <li><a href="documentation/index.html"><i class="fa fa-book"></i> Documentation</a></li>
-                <li class="header">LABELS</li>
-                <li><a href="#"><i class="fa fa-circle-o text-danger"></i> Important</a></li>
-                <li><a href="#"><i class="fa fa-circle-o text-warning"></i> Warning</a></li>
-                <li><a href="#"><i class="fa fa-circle-o text-info"></i> Information</a></li>
+                </li> 
+                <li><a href="documentation/index.html"><i class="fa fa-book"></i> Documentation</a></li> -->
+                <li class="header">Log Out</li>
+                <li><a href="../../../index.php"><i class="fa fa-circle-o text-danger"></i> Log Out</a></li>
+                <!-- <li><a href="#"><i class="fa fa-circle-o text-warning"></i> Warning</a></li>
+                <li><a href="#"><i class="fa fa-circle-o text-info"></i> Information</a></li>  -->
             </ul>
             </section>
             <!-- /.sidebar -->
