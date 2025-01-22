@@ -30,62 +30,121 @@
             <section class="content">
             <div class="row">
                 <div class="col-xs-12">
-                <div class="box">
-                    <div class="box-header">
-                        <h3 class="box-title">Data Produk</h3>
-                        <a href="produk-tambah.php" class="btn btn-primary pull-right">Tambah</a>
-                    </div><!-- /.box-header -->
-                    <div class="box-body">
-                    <table id="tabel-produk" class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama Produk</th>
-                                <th>Deskripsi</th>
-                                <th>Gambar</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                                $no = 1;
-                                $query = mysqli_query($connect, "SELECT * FROM produk");
-                                while ($row = mysqli_fetch_assoc($query)) {
-                            ?>
-                                <tr>
-                                    <td style="width: 4%;">
-                                        <?php echo $no++; ?>
-                                    </td>
-                                    <td style="width: 15%;">
-                                        <?php echo $row['namaProduk']; ?>
-                                    </td>
-                                    <td style="width: 36%;">
-                                        <?php echo $row['deskripsi']; ?>
-                                    </td>
-                                    <td style="width: 32%;">
-                                        <img src="../../images/<?php echo $row['namaGambar']; ?>" alt="gambar" width="100">
-                                    </td>
-                                    <td style="width: 13%;">
-                                        <a href="produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
-                                        <a href="produk-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
-                                    </td>
-                                </tr>
-                            <?php
-                                }
-                            ?>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama Produk</th>
-                                <th>Deskripsi</th>
-                                <th>Gambar</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    </div><!-- /.box-body -->
-                </div><!-- /.box -->
+                    <!-- Data Produk -->
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Data Produk</h3>
+                            <a href="produk-tambah.php" class="btn btn-primary pull-right">Tambah</a>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="tabel-produk" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Produk</th>
+                                        <th>Deskripsi</th>
+                                        <th>Gambar</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                        $no = 1;
+                                        $query = mysqli_query($connect, "SELECT * FROM produk");
+                                        while ($row = mysqli_fetch_assoc($query)) {
+                                    ?>
+                                        <tr>
+                                            <td style="width: 4%;">
+                                                <?php echo $no++; ?>
+                                            </td>
+                                            <td style="width: 15%;">
+                                                <?php echo $row['namaProduk']; ?>
+                                            </td>
+                                            <td style="width: 36%;">
+                                                <?php echo $row['deskripsi']; ?>
+                                            </td>
+                                            <td style="width: 32%;">
+                                                <img src="../../images/<?php echo $row['namaGambar']; ?>" alt="gambar" width="100">
+                                            </td>
+                                            <td style="width: 13%;">
+                                                <a href="produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
+                                                <a href="produk-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                        }
+                                    ?>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Produk</th>
+                                        <th>Deskripsi</th>
+                                        <th>Gambar</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div><!-- /.box -->
+
+                    <!-- Data Blog -->
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Data Artikel</h3>
+                            <a href="produk-tambah.php" class="btn btn-primary pull-right">Tambah</a>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="tabel-produk" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Produk</th>
+                                        <th>Deskripsi</th>
+                                        <th>Gambar</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                        $no = 1;
+                                        $query = mysqli_query($connect, "SELECT * FROM produk");
+                                        while ($row = mysqli_fetch_assoc($query)) {
+                                    ?>
+                                        <tr>
+                                            <td style="width: 4%;">
+                                                <?php echo $no++; ?>
+                                            </td>
+                                            <td style="width: 15%;">
+                                                <?php echo $row['namaProduk']; ?>
+                                            </td>
+                                            <td style="width: 36%;">
+                                                <?php echo $row['deskripsi']; ?>
+                                            </td>
+                                            <td style="width: 32%;">
+                                                <img src="../../images/<?php echo $row['namaGambar']; ?>" alt="gambar" width="100">
+                                            </td>
+                                            <td style="width: 13%;">
+                                                <a href="produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
+                                                <a href="produk-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                        }
+                                    ?>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Produk</th>
+                                        <th>Deskripsi</th>
+                                        <th>Gambar</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div><!-- /.box -->
                 </div><!-- /.col -->
             </div><!-- /.row -->
             </section><!-- /.content -->
