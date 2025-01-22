@@ -104,6 +104,12 @@
                     <small class="label pull-right bg-red">3</small>
                 </a>
                 </li> -->
+                <li class="<?= ($current_page == '/admin/dashboard-admin/kelola-konten.php') ? 'active' : '' ?>">
+                    <a href="kelola-konten.php">
+                        <i class="fa fa-files-o"></i> <span>Kelola Konten</span>
+                        <small class="label pull-right bg-yellow"></small>
+                    </a>
+                </li>
                 <li class="<?= ($current_page == '/admin/dashboard-admin/mailbox.php') ? 'active' : '' ?>">
                     <a href="mailbox.php">
                         <i class="fa fa-envelope"></i> <span>Mailbox</span>
