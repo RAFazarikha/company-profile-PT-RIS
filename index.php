@@ -1,3 +1,7 @@
+<?php
+    include 'koneksi/koneksi.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <?php include 'component/head.php'; ?>
@@ -226,7 +230,28 @@
                         <h2>We Provide Products</h2>
                     </div>
                     <div class="row">
+                        <?php
+                            $query = mysqli_query($connect, "SELECT * FROM produk");
+                            while ($row = mysqli_fetch_assoc($query)) {
+                        ?>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="images/<?php echo $row['namaGambar']; ?>" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            <?php echo $row['deskripsi']; ?>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3><?php echo $row['namaProduk']; ?></h3>
+                                    <a class="btn" href="images/<?php echo $row['namaGambar']; ?>" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <?php } ?>
+                        <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
                                     <img src="img/RIS-product-1.png" alt="Image">
@@ -305,7 +330,7 @@
                                     <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
