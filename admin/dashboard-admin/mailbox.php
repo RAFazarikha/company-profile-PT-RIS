@@ -30,9 +30,9 @@
   <body class="skin-blue">
     <div class="wrapper">
       
-      <?php include '../component/header.php'; ?>
+      <?php include 'component/header.php'; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include '../component/side-bar.php'; ?>
+      <?php include 'component/side-bar.php'; ?>
 
       <!-- Right side column. Contains the navbar and content of the page -->
       <div class="content-wrapper">

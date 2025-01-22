@@ -27,7 +27,7 @@
             <ul class="sidebar-menu">
                 <li class="header">MAIN NAVIGATION</li>
                 <li class="<?= ($current_page == '/admin/dashboard-admin/index.php') ? 'active' : '' ?>">
-                    <a href="\admin\dashboard-admin\index.php">
+                    <a href="index.php">
                         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         <small class="label pull-right bg-yellow">  </small>
                     </a>
@@ -104,8 +104,8 @@
                     <small class="label pull-right bg-red">3</small>
                 </a>
                 </li> -->
-                <li class="<?= ($current_page == '/admin/dashboard-admin/pages/mailbox.php') ? 'active' : '' ?>">
-                    <a href="\admin\dashboard-admin\pages\mailbox.php">
+                <li class="<?= ($current_page == '/admin/dashboard-admin/mailbox.php') ? 'active' : '' ?>">
+                    <a href="mailbox.php">
                         <i class="fa fa-envelope"></i> <span>Mailbox</span>
                         <small class="label pull-right bg-yellow">12</small>
                     </a>
