@@ -1,17 +1,22 @@
 <?php
     session_start();
-    include '../../koneksi/koneksi.php';
+    if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+        header("Location: ../login.php");
+        exit();
+    }
+
+    require '../../config/database.php';
 ?>
 
 <!DOCTYPE html>
 <html>
-    <?php include 'component/head.php'; ?>
+    <?php include '../component/head.php'; ?>
     <body class="skin-blue">
         <div class="wrapper">
         
-        <?php include 'component/header.php'; ?>
+        <?php include '../component/header.php'; ?>
         <!-- Left side column. contains the logo and sidebar -->
-        <?php include 'component/side-bar.php'; ?>
+        <?php include '../component/side-bar.php'; ?>
 
         <!-- Right side column. Contains the navbar and content of the page -->
         <div class="content-wrapper">
@@ -34,7 +39,7 @@
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">Data Produk</h3>
-                            <a href="produk-tambah.php" class="btn btn-primary pull-right">Tambah</a>
+                            <a href="../controllers/produk-tambah.php" class="btn btn-primary pull-right">Tambah</a>
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <table id="tabel-produk" class="table table-bordered table-striped">
@@ -67,8 +72,8 @@
                                                 <img src="../../images/<?php echo $row['namaGambar']; ?>" alt="gambar" width="100">
                                             </td>
                                             <td style="width: 13%;">
-                                                <a href="produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
-                                                <a href="produk-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
+                                                <a href="../controllers/produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
+                                                <a href="../controllers/produk-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
                                             </td>
                                         </tr>
                                     <?php
@@ -92,7 +97,7 @@
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">Data Artikel</h3>
-                            <a href="produk-tambah.php" class="btn btn-primary pull-right">Tambah</a>
+                            <a href="../controllers/produk-tambah.php" class="btn btn-primary pull-right">Tambah</a>
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <table id="tabel-produk" class="table table-bordered table-striped">
@@ -125,8 +130,8 @@
                                                 <img src="../../images/<?php echo $row['namaGambar']; ?>" alt="gambar" width="100">
                                             </td>
                                             <td style="width: 13%;">
-                                                <a href="produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
-                                                <a href="produk-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
+                                                <a href="../controllers/produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
+                                                <a href="../controllers/produk-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
                                             </td>
                                         </tr>
                                     <?php
@@ -149,24 +154,24 @@
             </div><!-- /.row -->
             </section><!-- /.content -->
         </div><!-- /.content-wrapper -->
-        <?php include 'component/footer.php'; ?>
+        <?php include '../component/footer.php'; ?>
         </div><!-- ./wrapper -->
 
         <!-- jQuery 2.1.3 -->
-        <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
+        <script src="../plugins/jQuery/jQuery-2.1.3.min.js"></script>
         <!-- Bootstrap 3.3.2 JS -->
-        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <!-- DATA TABES SCRIPT -->
-        <script src="plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
-        <script src="plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+        <script src="../plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
         <!-- SlimScroll -->
-        <script src="plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="../plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
         <!-- FastClick -->
-        <script src='plugins/fastclick/fastclick.min.js'></script>
+        <script src='../plugins/fastclick/fastclick.min.js'></script>
         <!-- AdminLTE App -->
-        <script src="dist/js/app.min.js" type="text/javascript"></script>
+        <script src="../dist/js/app.min.js" type="text/javascript"></script>
         <!-- AdminLTE for demo purposes -->
-        <script src="dist/js/demo.js" type="text/javascript"></script>
+        <script src="../dist/js/demo.js" type="text/javascript"></script>
         <!-- page script -->
         <script type="text/javascript">
         $(function () {
@@ -181,6 +186,7 @@
             });
         });
         </script>
-
+        <!-- AdminLTE for demo purposes -->
+        <script src="../dist/js/demo.js" type="text/javascript"></script>
     </body>
 </html>

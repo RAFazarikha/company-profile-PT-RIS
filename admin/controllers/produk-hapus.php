@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include '../../koneksi/koneksi.php';
+    include '../../config/database.php';
 
     if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
         $id = $_GET['id'];
@@ -9,7 +9,7 @@
         if ($query) {
             echo "<script>
                 alert('Data berhasil dihapus');
-                window.location.href = 'kelola-konten.php';
+                window.location.href = '../views/kelola-konten.php';
             </script>";
             exit;
         } else {

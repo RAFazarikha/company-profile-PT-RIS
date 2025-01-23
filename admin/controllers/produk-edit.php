@@ -1,18 +1,18 @@
 <?php
     session_start();
-    include '../../koneksi/koneksi.php';
+    include '../../config/database.php';
 
 ?>
 
 <!DOCTYPE html>
 <html>
-    <?php include 'component/head.php'; ?>
+    <?php include '../component/head.php'; ?>
     <body class="skin-blue">
         <div class="wrapper">
         
-        <?php include 'component/header.php'; ?>
+        <?php include '../component/header.php'; ?>
         <!-- Left side column. contains the logo and sidebar -->
-        <?php include 'component/side-bar.php'; ?>
+        <?php include '../component/side-bar.php'; ?>
 
         <!-- Right side column. Contains the navbar and content of the page -->
         <div class="content-wrapper">
@@ -76,7 +76,7 @@
                 </div><!-- /.row -->
             </section><!-- /.content -->
         </div><!-- /.content-wrapper -->
-        <?php include 'component/footer.php'; ?>
+        <?php include '../component/footer.php'; ?>
         </div><!-- ./wrapper -->
 
         
