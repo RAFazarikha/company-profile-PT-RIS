@@ -1,20 +1,32 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+    header("Location: ../login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
-  <?php include 'component/head.php'; ?>
+  <?php include '../component/head.php'; ?>
   <body class="skin-blue">
     <div class="wrapper">
       
-      <?php include 'component/header.php'; ?>
-      <!-- Left side column. contains the logo and sidebar -->
-      <?php include 'component/side-bar.php'; ?>
+      <?php include '../component/header.php'; ?>
+      <?php include '../component/side-bar.php'; ?>
 
       <!-- Right side column. Contains the navbar and content of the page -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <section class="content-header no-margin">
-          <h1 class="text-center">
+        <section class="content-header">
+          <h1>
             Mailbox
+            <small>Version 2.0</small>
           </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Mailbox</li>
+          </ol>
         </section>
 
         <!-- Main content -->
@@ -179,7 +191,7 @@
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
-      <?php include 'component/footer.php'; ?>
+      <?php include '../component/footer.php'; ?>
     </div><!-- ./wrapper -->
 
     <!-- COMPOSE MESSAGE MODAL -->

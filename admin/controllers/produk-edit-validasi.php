@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include '../../koneksi/koneksi.php';
+    include '../../config/database.php';
     
     if(isset($_POST['submit'])){
         $id = $_POST['id'];
@@ -21,7 +21,7 @@
                     if ($query) {
                         echo "<script>
                             alert('Data berhasil diubah');
-                            window.location.href = 'kelola-konten.php';
+                            window.location.href = '../views/kelola-konten.php';
                         </script>";
                         exit;
                     } else {
@@ -33,13 +33,13 @@
             } else {
                 $message = "Maaf, Ukuran gambar yang diupload tidak boleh lebih dari 3MB";
                 echo "<script>alert('$message');</script>";
-                header("Location: kelola-konten.php?message=" . urlencode($message));
+                header("Location: ../views/kelola-konten.php?message=" . urlencode($message));
                 exit;
             }
         } else {
             $message = "Maaf, Tipe gambar yang diupload harus JPG / JPEG / PNG.";
             echo "<script>alert('$message');</script>";
-            header("Location: kelola-konten.php?message=" . urlencode($message));
+            header("Location: ../views/kelola-konten.php?message=" . urlencode($message));
             exit;
         }
     } else {

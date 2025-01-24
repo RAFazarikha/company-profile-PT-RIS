@@ -1,7 +1,3 @@
-<?php
-    $current_page = $_SERVER['PHP_SELF']; // Mendapatkan path halaman saat ini
-?>
-
 <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
@@ -26,8 +22,8 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="header">MAIN NAVIGATION</li>
-                <li class="<?= ($current_page == '/admin/dashboard-admin/index.php') ? 'active' : '' ?>">
-                    <a href="index.php">
+                <li class="<?= ($current_page == 'dashboard.php') ? 'active' : '' ?>">
+                    <a href="dashboard.php">
                         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         <small class="label pull-right bg-yellow">  </small>
                     </a>
@@ -104,13 +100,13 @@
                     <small class="label pull-right bg-red">3</small>
                 </a>
                 </li> -->
-                <li class="<?= ($current_page == '/admin/dashboard-admin/kelola-konten.php') ? 'active' : '' ?>">
+                <li class="<?= ($current_page == 'kelola-konten.php') ? 'active' : '' ?>">
                     <a href="kelola-konten.php">
                         <i class="fa fa-files-o"></i> <span>Kelola Konten</span>
                         <small class="label pull-right bg-yellow"></small>
                     </a>
                 </li>
-                <li class="<?= ($current_page == '/admin/dashboard-admin/mailbox.php') ? 'active' : '' ?>">
+                <li class="<?= ($current_page == 'mailbox.php') ? 'active' : '' ?>">
                     <a href="mailbox.php">
                         <i class="fa fa-envelope"></i> <span>Mailbox</span>
                         <small class="label pull-right bg-yellow">12</small>
@@ -156,7 +152,7 @@
                 </li> 
                 <li><a href="documentation/index.html"><i class="fa fa-book"></i> Documentation</a></li> -->
                 <li class="header">Log Out</li>
-                <li><a href="../../../index.php"><i class="fa fa-circle-o text-danger"></i> Log Out</a></li>
+                <li><a href="../logout.php"><i class="fa fa-circle-o text-danger"></i> Log Out</a></li>
                 <!-- <li><a href="#"><i class="fa fa-circle-o text-warning"></i> Warning</a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-info"></i> Information</a></li>  -->
             </ul>
