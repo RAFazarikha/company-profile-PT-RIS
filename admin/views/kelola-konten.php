@@ -54,22 +54,25 @@
                                 </thead>
                                 <tbody>
                                     <?php
+
+                                    try {
+                                        $query = $db->query("SELECT * FROM produk");
                                         $no = 1;
-                                        $query = mysqli_query($connect, "SELECT * FROM produk");
-                                        while ($row = mysqli_fetch_assoc($query)) {
+
+                                        while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
                                     ?>
                                         <tr>
                                             <td style="width: 4%;">
                                                 <?php echo $no++; ?>
                                             </td>
                                             <td style="width: 15%;">
-                                                <?php echo $row['namaProduk']; ?>
+                                                <?php echo htmlspecialchars($row['namaProduk']); ?>
                                             </td>
                                             <td style="width: 36%;">
-                                                <?php echo $row['deskripsi']; ?>
+                                                <?php echo htmlspecialchars($row['deskripsi']); ?>
                                             </td>
                                             <td style="width: 32%;">
-                                                <img src="../../images/<?php echo $row['namaGambar']; ?>" alt="gambar" width="100">
+                                                <img src="../../images/<?php echo htmlspecialchars($row['namaGambar']); ?>" alt="gambar" width="100">
                                             </td>
                                             <td style="width: 13%;">
                                                 <a href="../controllers/produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
@@ -78,9 +81,12 @@
                                         </tr>
                                     <?php
                                         }
+                                    } catch (PDOException $e) {
+                                        echo "<tr><td colspan='5'>Error: " . $e->getMessage() . "</td></tr>";
+                                    }
                                     ?>
                                 </tbody>
-                                <tfoot>
+                                <!-- <tfoot>
                                     <tr>
                                         <th>No</th>
                                         <th>Nama Produk</th>
@@ -88,7 +94,7 @@
                                         <th>Gambar</th>
                                         <th>Aksi</th>
                                     </tr>
-                                </tfoot>
+                                </tfoot> -->
                             </table>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
@@ -112,22 +118,25 @@
                                 </thead>
                                 <tbody>
                                     <?php
+
+                                    try {
+                                        $query = $db->query("SELECT * FROM produk");
                                         $no = 1;
-                                        $query = mysqli_query($connect, "SELECT * FROM produk");
-                                        while ($row = mysqli_fetch_assoc($query)) {
+
+                                        while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
                                     ?>
                                         <tr>
                                             <td style="width: 4%;">
                                                 <?php echo $no++; ?>
                                             </td>
                                             <td style="width: 15%;">
-                                                <?php echo $row['namaProduk']; ?>
+                                                <?php echo htmlspecialchars($row['namaProduk']); ?>
                                             </td>
                                             <td style="width: 36%;">
-                                                <?php echo $row['deskripsi']; ?>
+                                                <?php echo htmlspecialchars($row['deskripsi']); ?>
                                             </td>
                                             <td style="width: 32%;">
-                                                <img src="../../images/<?php echo $row['namaGambar']; ?>" alt="gambar" width="100">
+                                                <img src="../../images/<?php echo htmlspecialchars($row['namaGambar']); ?>" alt="gambar" width="100">
                                             </td>
                                             <td style="width: 13%;">
                                                 <a href="../controllers/produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
@@ -136,9 +145,12 @@
                                         </tr>
                                     <?php
                                         }
+                                    } catch (PDOException $e) {
+                                        echo "<tr><td colspan='5'>Error: " . $e->getMessage() . "</td></tr>";
+                                    }
                                     ?>
                                 </tbody>
-                                <tfoot>
+                                <!-- <tfoot>
                                     <tr>
                                         <th>No</th>
                                         <th>Nama Produk</th>
@@ -146,7 +158,7 @@
                                         <th>Gambar</th>
                                         <th>Aksi</th>
                                     </tr>
-                                </tfoot>
+                                </tfoot> -->
                             </table>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
