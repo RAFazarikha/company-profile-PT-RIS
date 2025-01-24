@@ -231,8 +231,9 @@
                     </div>
                     <div class="row">
                         <?php
-                            $query = mysqli_query($connect, "SELECT * FROM produk");
-                            while ($row = mysqli_fetch_assoc($query)) {
+                            $query = $db->query("SELECT * FROM produk");
+                            $results = $query->fetchAll(PDO::FETCH_ASSOC);
+                            foreach ($results as $row) {
                         ?>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">

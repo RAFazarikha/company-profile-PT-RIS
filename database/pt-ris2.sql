@@ -29,6 +29,19 @@ CREATE TABLE IF NOT EXISTS `admin` (
 
 -- Pengeluaran data tidak dipilih.
 
+-- membuang struktur untuk table pt-ris.produk
+CREATE TABLE IF NOT EXISTS `produk` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `namaProduk` varchar(100) NOT NULL,
+  `deskripsi` varchar(200) NOT NULL,
+  `tipe` varchar(255) DEFAULT NULL,
+  `ukuran` int DEFAULT NULL,
+  `namaGambar` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Pengeluaran data tidak dipilih.
+
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
