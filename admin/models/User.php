@@ -1,5 +1,7 @@
 <?php
 
+require '../config/database.php';
+
 class User
 {
     private $db;
@@ -12,8 +14,11 @@ class User
     public function authenticate($username, $password)
     {
         // Sanitasi input untuk mencegah SQL Injection
-        $query = $this->db->prepare("SELECT * FROM users WHERE username = :username AND role = 'admin'");
-        $query->execute(['username' => $username]);
+        $query = $this->db->prepare("SELECT * FROM admin WHERE username = :username AND password = :password");
+        $query->execute([
+            'username' => $username,
+            'password' => $password
+        ]);
         $user = $query->fetch(PDO::FETCH_ASSOC);
 
         // Verifikasi password

@@ -16,13 +16,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user) {
         // Set session jika login berhasil
         $_SESSION['user_id'] = $user['id'];
+<<<<<<< HEAD
         $_SESSION['username'] = $user['username'];
         $_SESSION['role'] = $user['role'];
+=======
+        $_SESSION['username'] = $user['username']; // Tambahkan username ke session
+>>>>>>> 6d7db4376640e426c988637eedca412eec8ddace
 
-        // Redirect berdasarkan peran
-        if ($user['role'] === 'admin') {
-            header("Location: views/dashboard.php");
-        } exit();
+        header("Location: views/dashboard.php");
+
     } else {
         $error = "Username atau password salah.";
     }
@@ -30,9 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // Jika sudah login, redirect ke dashboard
 if (isset($_SESSION['user_id'])) {
-    if ($_SESSION['role'] === 'admin') {
-        header("Location: views/dashboard.php");
-    } exit();
+    header("Location: views/dashboard.php");
+
 }
 ?>
 
