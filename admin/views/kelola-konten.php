@@ -103,16 +103,17 @@
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">Data Artikel</h3>
-                            <a href="../controllers/produk-tambah.php" class="btn btn-primary pull-right">Tambah</a>
+                            <a href="../controllers/artikel-tambah.php" class="btn btn-primary pull-right">Tambah</a>
                         </div><!-- /.box-header -->
                         <div class="box-body">
-                            <table id="tabel-produk" class="table table-bordered table-striped">
+                            <table id="tabel-artikel" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama Produk</th>
-                                        <th>Deskripsi</th>
+                                        <th>Judul Artikel</th>
+                                        <th>Isi Artikel</th>
                                         <th>Gambar</th>
+                                        <th>Detail</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -120,7 +121,7 @@
                                     <?php
 
                                     try {
-                                        $query = $db->query("SELECT * FROM produk");
+                                        $query = $db->query("SELECT * FROM artikel");
                                         $no = 1;
 
                                         while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
@@ -129,18 +130,22 @@
                                             <td style="width: 4%;">
                                                 <?php echo $no++; ?>
                                             </td>
-                                            <td style="width: 15%;">
-                                                <?php echo htmlspecialchars($row['namaProduk']); ?>
+                                            <td style="width: 10%;">
+                                                <?php echo htmlspecialchars($row['title']); ?>
                                             </td>
                                             <td style="width: 36%;">
-                                                <?php echo htmlspecialchars($row['deskripsi']); ?>
+                                                <?php echo htmlspecialchars($row['content']); ?>
                                             </td>
-                                            <td style="width: 32%;">
+                                            <td style="width: 27%;">
                                                 <img src="../../images/<?php echo htmlspecialchars($row['namaGambar']); ?>" alt="gambar" width="100">
                                             </td>
+                                            <td style="width: 10%;">
+                                                By <?php 
+                                                echo htmlspecialchars($row['namaAuthor']); ?> Created at <?php echo htmlspecialchars($row['create_at']); ?>
+                                            </td>
                                             <td style="width: 13%;">
-                                                <a href="../controllers/produk-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
-                                                <a href="../controllers/produk-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
+                                                <a href="../controllers/artikel-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
+                                                <a href="../controllers/artikel-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
                                             </td>
                                         </tr>
                                     <?php
@@ -188,6 +193,7 @@
         <script type="text/javascript">
         $(function () {
             $("#tabel-produk").dataTable();
+            $("#tabel-artikel").dataTable();
             $('#example2').dataTable({
             "bPaginate": true,
             "bLengthChange": false,

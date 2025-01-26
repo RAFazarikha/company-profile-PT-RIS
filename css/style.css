@@ -1328,6 +1328,24 @@ a:focus {
     color: #999999;
 }
 
+.like-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.like-btn:hover {
+    color: var(--secondary-color);
+}
+
+.like-btn i {
+    margin-right: 5px;
+}
+
+
 
 /*******************************/
 /******* Single Post CSS *******/
