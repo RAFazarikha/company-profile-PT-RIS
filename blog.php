@@ -63,7 +63,7 @@
                                     <p>At <?php echo date('d F Y', strtotime($row['create_at'])); ?></p>
                                 </div>
                                 <div class="blog-text text-truncate">
-                                    <p><?php echo htmlspecialchars($row['content']); ?></p>
+                                    <?php echo htmlspecialchars($row['content']); ?>
                                 </div>
                             </div>
                         </div>

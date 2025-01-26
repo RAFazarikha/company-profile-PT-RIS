@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                     if ($query->execute()) {
                         echo "<script>
                             alert('Komentar berhasil ditambahkan');
-                            window.location.href = 'single-blog.php?id=" . $id . "';
+                            window.location.href = 'single-blog.php?id=" . $idArtikel . "';
                         </script>";
                         exit;
                     } else {

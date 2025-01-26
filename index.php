@@ -256,86 +256,6 @@
                         <?php 
                         }
                         ?>
-                        <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/RIS-product-1.png" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            Pencampuran 30% Biodiesel dengan 70% bahan bakar minyak jenis Solar, yang menghasilkan produk Biosolar B30.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>B30 Solar Industri</h3>
-                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/RIS-product-1.png" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            Pencampuran 35 persen minyak sawit dan 65 persen solar. Tujuan dari program peluncuran ini adalah untuk meningkatkan pasokan supply energi secara berkelanjutan. Selain itu, keberadaannya juga sebagai upaya untuk menekan impor solar di tengah situasi global yang terancam krisis.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>B35 High Speed Diesel</h3>
-                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/RIS-product-1.png" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            Bahan bakar untuk mesin diesel yang memiliki angka cetane tertinggi dibandingkan produk lainnya yaitu 53. Dengan menggunakan pertamina dex banyak manfaat yang didapatkan yaitu meningkatkan daya mesin, mesin lebih tahana lama serta lebih ramah lingkungan.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>Pertamina DEX</h3>
-                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/RIS-product-1.png" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            Merupakan salah satu jenis bahan bakar dari proses residu destilasi minyak bakar. Sifat dari MFO yaitu stabilitas, kekentalan, korosifitas, kebersihan, dan keselamatan.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>MFO (Marine Fuel Oil)</h3>
-                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/RIS-product-1.png" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                        Merupakan jenis bahan bakar standar emisi yang ditetapkan oleh Uni Eropa untuk kendaraan bermotor, termasuk yang menggunakan solar industri. Standar emisi Euro 5 merupakan standar emisi yang berlaku sejak September 2009 dan merupakan kelanjutan dari Euro 4 yang diterapkan sejak 2005.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>Euro 5</h3>
-                                    <a class="btn" href="img/RIS-product-1.png" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -450,6 +370,148 @@
             </div> -->
             <!-- Team End -->
             
+            <!-- Blog Start -->
+            <div class="blog">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Latest Blog</p>
+                        <h2>Latest From Our Blog</h2>
+                    </div>
+                    <div class="row">
+                        <?php
+                            $query = $db->query("SELECT * FROM artikel ORDER BY create_at DESC");
+
+                            while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
+                        ?>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="images/<?php echo htmlspecialchars($row['namaGambar']) ?>" alt="Image">
+                                </div>
+                                <div class="blog-title">
+                                    <h3><?php echo htmlspecialchars($row['title']) ?></h3>
+                                    <a class="btn" href="single-blog.php?id=<?php echo htmlspecialchars($row['id']) ?>">+</a>
+                                </div>
+                                <div class="blog-meta">
+                                    <p>By <?php echo htmlspecialchars($row['namaAuthor']); ?></p>
+                                    <p>At <?php echo date('d F Y', strtotime($row['create_at'])); ?></p>
+                                </div>
+                                <div class="blog-text text-truncate">
+                                    <?php echo htmlspecialchars($row['content']); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog End -->
+
+
+            <!-- Testimonial Start -->
+            <div class="testimonial">
+                <div class="section-header text-center">
+                    <p>Our Partner</p>
+                    <h2>Partners and Client</h2>
+                </div>
+                <div class="container">
+                    <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-1" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/1.png" alt="Carousel Image">
+                            </div>
+    
+                            <div class="carousel-item">
+                                <img src="img/2.png" alt="Carousel Image">
+                            </div>
+    
+                            <div class="carousel-item">
+                                <img src="img/3.png" alt="Carousel Image">
+                            </div>
+                        </div>
+    
+                        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonial-slider-nav">
+                                <div class="slider-nav"><img src="img/RIS-logoklien-1.png" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonial-slider">
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Testimonial End -->
+
 
             <!-- FAQs Start -->
             <div class="faqs">
@@ -591,185 +653,6 @@
                 </div>
             </div>
             <!-- FAQs End -->
-
-
-            <!-- Testimonial Start -->
-            <div class="testimonial">
-                <div class="section-header text-center">
-                    <p>Our Partner</p>
-                    <h2>Partners and Client</h2>
-                </div>
-                <div class="container">
-                    <div id="carousel-1" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-1" data-slide-to="1"></li>
-                            <li data-target="#carousel-1" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/1.png" alt="Carousel Image">
-                            </div>
-    
-                            <div class="carousel-item">
-                                <img src="img/2.png" alt="Carousel Image">
-                            </div>
-    
-                            <div class="carousel-item">
-                                <img src="img/3.png" alt="Carousel Image">
-                            </div>
-                        </div>
-    
-                        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="testimonial-slider-nav">
-                                <div class="slider-nav"><img src="img/RIS-logoklien-1.png" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="testimonial-slider">
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Testimonial End -->
-
-
-            <!-- Blog Start -->
-            <!-- <div class="blog">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <p>Latest Blog</p>
-                        <h2>Latest From Our Blog</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="blog-item">
-                                <div class="blog-img">
-                                    <img src="img/blog-1.jpg" alt="Image">
-                                </div>
-                                <div class="blog-title">
-                                    <h3>Lorem ipsum dolor sit</h3>
-                                    <a class="btn" href="">+</a>
-                                </div>
-                                <div class="blog-meta">
-                                    <p>By<a href="">Admin</a></p>
-                                    <p>In<a href="">Construction</a></p>
-                                </div>
-                                <div class="blog-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp">
-                            <div class="blog-item">
-                                <div class="blog-img">
-                                    <img src="img/blog-2.jpg" alt="Image">
-                                </div>
-                                <div class="blog-title">
-                                    <h3>Lorem ipsum dolor sit</h3>
-                                    <a class="btn" href="">+</a>
-                                </div>
-                                <div class="blog-meta">
-                                    <p>By<a href="">Admin</a></p>
-                                    <p>In<a href="">Construction</a></p>
-                                </div>
-                                <div class="blog-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="blog-item">
-                                <div class="blog-img">
-                                    <img src="img/blog-3.jpg" alt="Image">
-                                </div>
-                                <div class="blog-title">
-                                    <h3>Lorem ipsum dolor sit</h3>
-                                    <a class="btn" href="">+</a>
-                                </div>
-                                <div class="blog-meta">
-                                    <p>By<a href="">Admin</a></p>
-                                    <p>In<a href="">Construction</a></p>
-                                </div>
-                                <div class="blog-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Blog End -->
 
 
             <!-- Footer Start -->

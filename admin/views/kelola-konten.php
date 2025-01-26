@@ -145,7 +145,7 @@
                                             </td>
                                             <td style="width: 13%;">
                                                 <a href="../controllers/artikel-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a>
-                                                <a href="../controllers/artikel-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
+                                                <a href="../controllers/artikel-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus artikel ini?');">Hapus</a>
                                             </td>
                                         </tr>
                                     <?php
@@ -167,6 +167,84 @@
                             </table>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
+
+
+                    <!-- Data Coment -->
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Komentar Masuk</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="tabel-komen" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Judul Artikel</th>
+                                        <th>Nama</th>
+                                        <th>Email</th>
+                                        <th>Komentar</th>
+                                        <th>Detail</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+
+                                    try {
+                                        $query = $db->query("SELECT * FROM coment");
+                                        $no = 1;
+
+                                        while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
+                                    ?>
+                                        <tr>
+                                            <td style="width: 4%;">
+                                                <?php echo $no++; ?>
+                                            </td>
+                                            <td style="width: 15%;">
+                                                <?php 
+                                                    $query2 = $db->prepare("SELECT title FROM artikel WHERE id = :id");
+                                                    $query2->bindParam(':id', $row['idArtikel']);
+                                                    $query2->execute();
+                                                    $row2 = $query2->fetch(PDO::FETCH_ASSOC);
+                                                    echo htmlspecialchars($row2['title']); ?>
+                                            </td>
+                                            <td style="width: 10%;">
+                                                <?php echo htmlspecialchars($row['nama']); ?>
+                                            </td>
+                                            <td style="width: 16%;">
+                                                <?php echo htmlspecialchars($row['email']); ?>
+                                            </td>
+                                            <td style="width: 30%;">
+                                                <?php echo htmlspecialchars($row['komentar']); ?>
+                                            </td>
+                                            <td style="width: 15%;">
+                                                Created at <?php echo htmlspecialchars($row['create_at']); ?>
+                                            </td>
+                                            <td style="width: 10%;">
+                                                <a href="../controllers/komentar-hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus komentar ini?');">Hapus</a>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                        }
+                                    } catch (PDOException $e) {
+                                        echo "<tr><td colspan='5'>Error: " . $e->getMessage() . "</td></tr>";
+                                    }
+                                    ?>
+                                </tbody>
+                                <!-- <tfoot>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Produk</th>
+                                        <th>Deskripsi</th>
+                                        <th>Gambar</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </tfoot> -->
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div><!-- /.box -->
+
+
                 </div><!-- /.col -->
             </div><!-- /.row -->
             </section><!-- /.content -->
@@ -194,6 +272,7 @@
         $(function () {
             $("#tabel-produk").dataTable();
             $("#tabel-artikel").dataTable();
+            $("#tabel-komen").dataTable();
             $('#example2').dataTable({
             "bPaginate": true,
             "bLengthChange": false,
