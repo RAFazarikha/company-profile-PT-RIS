@@ -1,12 +1,16 @@
 <?php
-    session_start();
-    include '../../config/database.php';
+session_start();
+include '../../config/database.php';
 
-    if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
+    try {
         $id = $_GET['id'];
-        $query = mysqli_query($connect, "DELETE FROM produk WHERE id = '$id'");
 
-        if ($query) {
+        // Persiapan query dengan prepared statements untuk keamanan
+        $query = $db->prepare("DELETE FROM produk WHERE id = :id");
+        $query->bindParam(':id', $id, PDO::PARAM_INT);
+
+        if ($query->execute()) {
             echo "<script>
                 alert('Data berhasil dihapus');
                 window.location.href = '../views/kelola-konten.php';
@@ -15,7 +19,11 @@
         } else {
             echo "<script>alert('Data gagal dihapus');</script>";
         }
-    } else {
-        echo "<script>alert('Data tidak boleh kosong');</script>";
+    } catch (PDOException $e) {
+        // Menangani error PDO
+        echo "<script>alert('Terjadi kesalahan: " . $e->getMessage() . "');</script>";
     }
+} else {
+    echo "<script>alert('Permintaan tidak valid atau data tidak lengkap');</script>";
+}
 ?>

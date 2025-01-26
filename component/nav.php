@@ -1,8 +1,3 @@
-<?php
-// Mendapatkan nama file aktif
-$current_page = basename($_SERVER['PHP_SELF']);
-?>
-
 <div class="nav-bar">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">

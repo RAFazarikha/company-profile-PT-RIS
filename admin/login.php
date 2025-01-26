@@ -16,10 +16,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user) {
         // Set session jika login berhasil
         $_SESSION['user_id'] = $user['id'];
-        $_SESSION['username'] = $user['username']; // Tambahkan username ke session
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['role'] = $user['role'];
 
-        header("Location: views/dashboard.php");
-
+        // Redirect berdasarkan peran
+        if ($user['role'] === 'admin') {
+            header("Location: views/dashboard.php");
+        } exit();
     } else {
         $error = "Username atau password salah.";
     }
@@ -27,8 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // Jika sudah login, redirect ke dashboard
 if (isset($_SESSION['user_id'])) {
-    header("Location: views/dashboard.php");
-
+    if ($_SESSION['role'] === 'admin') {
+        header("Location: views/dashboard.php");
+    } exit();
 }
 ?>
 
@@ -84,6 +88,8 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </form>
         </div><!-- /.login-box-body -->
+        <br>
+        <a href="../index.php">Go to PT.RIS</a>
     </div><!-- /.login-box -->
 
     <!-- jQuery -->

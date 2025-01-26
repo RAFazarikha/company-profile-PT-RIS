@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    include '../../config/database.php';
+session_start();
+include '../../config/database.php';
 
 ?>
 
@@ -38,32 +38,44 @@
                             <div class="box-body">
                             <form role="form" action="produk-edit-validasi.php" method="post" enctype="multipart/form-data">
                                 <?php
+                                try {
                                     $id = $_GET['id'];
-                                    $query = mysqli_query($connect, "SELECT * FROM produk WHERE id = '$id'");
-                                    while($row = mysqli_fetch_assoc($query)){
+                                    $query = $db->prepare("SELECT * FROM produk WHERE id = :id");
+                                    $query->bindParam(':id', $id, PDO::PARAM_INT);
+                                    $query->execute();
+
+                                    if ($query->rowCount() > 0) {
+                                        $row = $query->fetch(PDO::FETCH_ASSOC);
                                 ?>
                                 <!-- text input -->
                                 <div class="form-group">
-                                    <input type="text" name="id" value="<?php echo $row['id'] ?>" hidden/>
+                                    <input type="text" name="id" value="<?php echo $row['id']; ?>" hidden/>
                                     <label for="nama">Nama</label>
-                                    <input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Produk" value="<?php echo $row['namaProduk'] ?>" required/>
+                                    <input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Produk" value="<?php echo htmlspecialchars($row['namaProduk']); ?>" required/>
                                 </div>
 
                                 <!-- textarea -->
                                 <div class="form-group">
                                     <label for="deskripsi">Deskripsi</label>
-                                    <textarea name="deskripsi" class="form-control" rows="3" placeholder="Masukkan Deskripsi Produk" required><?php echo $row['deskripsi'] ?></textarea>
+                                    <textarea name="deskripsi" class="form-control" rows="3" placeholder="Masukkan Deskripsi Produk" required><?php echo htmlspecialchars($row['deskripsi']); ?></textarea>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="gambar">Input Gambar</label>
                                     <input type="file" id="gambar" name="gambar" accept="image/*" required>
                                     <p class="help-block">.png .jpg .jpeg (Maks. 2MB)</p>
-                                    <p>File sebelumnya: <?php echo $row['namaGambar']; ?></p>
-                                    <img src="../../images/<?php echo $row['namaGambar']; ?>" alt="Gambar Produk" width="150">
+                                    <p>File sebelumnya: <?php echo htmlspecialchars($row['namaGambar']); ?></p>
+                                    <img src="../../images/<?php echo htmlspecialchars($row['namaGambar']); ?>" alt="Gambar Produk" width="150">
                                 </div>
 
-                                <?php } ?>
+                                <?php 
+                                    } else {
+                                        echo "<p>Data produk tidak ditemukan.</p>";
+                                    }
+                                } catch (PDOException $e) {
+                                    echo "<p>Error: " . $e->getMessage() . "</p>";
+                                }
+                                ?>
                                 <div class="box-footer">
                                     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                                 </div>
@@ -78,8 +90,6 @@
         </div><!-- /.content-wrapper -->
         <?php include '../component/footer.php'; ?>
         </div><!-- ./wrapper -->
-
-        
 
     </body>
 </html>

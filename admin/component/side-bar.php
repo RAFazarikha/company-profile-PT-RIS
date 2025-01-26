@@ -23,7 +23,7 @@
             <ul class="sidebar-menu">
                 <li class="header">MAIN NAVIGATION</li>
                 <li class="<?= ($current_page == 'dashboard.php') ? 'active' : '' ?>">
-                    <a href="dashboard.php">
+                    <a href="../views/dashboard.php">
                         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         <small class="label pull-right bg-yellow">  </small>
                     </a>
@@ -101,13 +101,13 @@
                 </a>
                 </li> -->
                 <li class="<?= ($current_page == 'kelola-konten.php') ? 'active' : '' ?>">
-                    <a href="kelola-konten.php">
+                    <a href="../views/kelola-konten.php">
                         <i class="fa fa-files-o"></i> <span>Kelola Konten</span>
                         <small class="label pull-right bg-yellow"></small>
                     </a>
                 </li>
                 <li class="<?= ($current_page == 'mailbox.php') ? 'active' : '' ?>">
-                    <a href="mailbox.php">
+                    <a href="../views/mailbox.php">
                         <i class="fa fa-envelope"></i> <span>Mailbox</span>
                         <small class="label pull-right bg-yellow">12</small>
                     </a>

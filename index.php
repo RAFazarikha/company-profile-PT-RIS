@@ -1,5 +1,6 @@
 <?php
     include 'config/database.php';
+    require 'controllers/visitor_counter.php';
 ?>
 
 <!DOCTYPE html>
@@ -231,27 +232,30 @@
                     </div>
                     <div class="row">
                         <?php
-                            $query = $db->query("SELECT * FROM produk");
-                            $results = $query->fetchAll(PDO::FETCH_ASSOC);
-                            foreach ($results as $row) {
+                        // Menggunakan PDO untuk mengambil data produk
+                        $query = $db->query("SELECT * FROM produk");
+
+                        while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
                         ?>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="images/<?php echo $row['namaGambar']; ?>" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            <?php echo $row['deskripsi']; ?>
-                                        </p>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="service-item">
+                                    <div class="service-img">
+                                        <img src="images/<?php echo htmlspecialchars($row['namaGambar']); ?>" alt="Image">
+                                        <div class="service-overlay">
+                                            <p>
+                                                <?php echo htmlspecialchars($row['deskripsi']); ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3><?php echo htmlspecialchars($row['namaProduk']); ?></h3>
+                                        <a class="btn" href="images/<?php echo htmlspecialchars($row['namaGambar']); ?>" data-lightbox="service">+</a>
                                     </div>
                                 </div>
-                                <div class="service-text">
-                                    <h3><?php echo $row['namaProduk']; ?></h3>
-                                    <a class="btn" href="images/<?php echo $row['namaGambar']; ?>" data-lightbox="service">+</a>
-                                </div>
                             </div>
-                        </div>
-                        <?php } ?>
+                        <?php 
+                        }
+                        ?>
                         <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
