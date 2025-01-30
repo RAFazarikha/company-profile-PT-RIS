@@ -1,35 +1,46 @@
 <?php
-if (empty($_POST['name']) || empty($_POST['subject']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    http_response_code(400); // 400 lebih tepat untuk kesalahan input pengguna
-    echo "Invalid input.";
-    exit();
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php'; // Jika menggunakan Composer
+
+$mail = new PHPMailer(true);
+
+// Ambil Data dari Form
+$name = strip_tags(htmlspecialchars($_POST['name']));
+$email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+$m_subject = strip_tags(htmlspecialchars($_POST['subject']));
+$message = nl2br(strip_tags(htmlspecialchars($_POST['message'])));
+
+if (!$email) {
+    die("Alamat email tidak valid!");
 }
 
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email = strip_tags(htmlspecialchars($_POST['email']));
-$m_subject = strip_tags(htmlspecialchars($_POST['subject']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
+try {
+    // Konfigurasi SMTP
+    $mail->isSMTP();
+    $mail->Host       = 'mail.teknoonline.id';  // SMTP server dari penyedia email
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'admin@teknoonline.id'; // Email pengirim
+    $mail->Password   = 'password_email_anda';  // Ganti dengan password email
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Gunakan SSL
+    $mail->Port       = 465;  // Port SMTP sesuai konfigurasi
 
-$to = "rizkiintipratamasinergi@gmail.com"; // Ganti dengan alamat email Anda
-$subject = "$m_subject: $name";
-$body = "You have received a new message from your website contact form.\n\n"
-    . "Here are the details:\n\n"
-    . "Name: $name\n\n"
-    . "Email: $email\n\n"
-    . "Subject: $m_subject\n\n"
-    . "Message:\n$message";
+    // Pengaturan Email
+    $mail->setFrom($email, $name); // Pengirim
+    $mail->addAddress('admin@teknoonline.id', 'Tekno Online'); // Penerima
 
-$headers = "From: no-reply@yourdomain.com\r\n"; // Ganti dengan domain Anda
-$headers .= "Reply-To: $email\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $mail->Subject = $m_subject;
+    $mail->isHTML(true);
+    $mail->Body    = "<html><body>
+                        <h3>Pesan dari: $name ($email)</h3>
+                        <p>$message</p>
+                      </body></html>";
 
-if (!mail($to, $subject, $body, $headers)) {
-    error_log("Mail failed to send to $to");
-    http_response_code(500); // Kesalahan server
-    echo "Failed to send email.";
-} else {
-    http_response_code(200); // Sukses
-    echo "Email sent successfully.";
+    // Kirim Email
+    $mail->send();
+    echo "Email berhasil dikirim!";
+} catch (Exception $e) {
+    echo "Gagal mengirim email. Error: {$mail->ErrorInfo}";
 }
 ?>
