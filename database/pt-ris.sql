@@ -14,6 +14,8 @@ MySQL - 8.0.30 : Database - pt-ris
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`pt-ris` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
+USE `pt-ris`;
+
 /*Table structure for table `artikel` */
 
 DROP TABLE IF EXISTS `artikel`;
@@ -30,12 +32,12 @@ CREATE TABLE `artikel` (
   `namaAuthor` varchar(255) DEFAULT NULL,
   `deskripsiAuthor` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 /*Data for the table `artikel` */
 
 insert  into `artikel`(`id`,`title`,`content`,`namaGambar`,`tipeGambar`,`ukuranGambar`,`likes`,`create_at`,`namaAuthor`,`deskripsiAuthor`) values 
-(1,'Naik-nya Harga Minyak','Minyak naik dikarenakan apa','logo.png','image/png',52241,1,'2025-01-26 06:47:31','Rakha','Seorang mahasiswa');
+(3,'Harga Minyak Naik','Kenaikan harga minyak merupakan fenomena ekonomi yang sering kali memengaruhi berbagai sektor kehidupan. Harga minyak naik biasanya terjadi akibat kombinasi dari beberapa faktor, seperti peningkatan permintaan global, penurunan produksi oleh negara-negara produsen minyak, ketegangan geopolitik, dan gangguan pada rantai pasok.','RIS-image1.png','image/png',581875,0,'2025-01-26 12:46:59','Rakha','Seorang mahasiswa S1');
 
 /*Table structure for table `coment` */
 
@@ -51,12 +53,12 @@ CREATE TABLE `coment` (
   PRIMARY KEY (`id`),
   KEY `idArtikel` (`idArtikel`),
   CONSTRAINT `coment_ibfk_1` FOREIGN KEY (`idArtikel`) REFERENCES `artikel` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 /*Data for the table `coment` */
 
 insert  into `coment`(`id`,`nama`,`email`,`komentar`,`create_at`,`idArtikel`) values 
-(1,'Sabil','sabiluddin@gmail.com','sangat bagus','2025-01-26 09:14:19',1);
+(2,'Sabil','sabiluddin@gmail.com','Berita yang menarik','2025-01-26 12:50:04',3);
 
 /*Table structure for table `kontak` */
 
@@ -87,7 +89,7 @@ CREATE TABLE `pengunjung` (
   `ip_address` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 /*Data for the table `pengunjung` */
 
@@ -103,7 +105,10 @@ insert  into `pengunjung`(`id`,`ip_address`,`timestamp`) values
 (9,'192.168.1.9','2025-01-24 17:47:57'),
 (10,'192.168.1.10','2025-01-24 17:47:57'),
 (11,'::1','2025-01-25 22:46:20'),
-(12,'127.0.0.1','2025-01-26 07:12:06');
+(12,'127.0.0.1','2025-01-26 07:12:06'),
+(13,'127.0.0.1','2025-01-27 20:38:50'),
+(14,'127.0.0.1','2025-01-30 19:37:19'),
+(15,'127.0.0.1','2025-02-07 18:12:14');
 
 /*Table structure for table `produk` */
 

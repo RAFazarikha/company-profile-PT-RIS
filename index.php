@@ -409,7 +409,7 @@
 
 
             <!-- Testimonial Start -->
-            <div class="testimonial">
+            <div class="testimonial1">
                 <div class="section-header text-center">
                     <p>Our Partner</p>
                     <h2>Partners and Client</h2>
@@ -446,12 +446,15 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+            <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+                <div class="section-header text-center">
+                    <h2>Testimonial</h2>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="testimonial-slider-nav">
-                                <div class="slider-nav"><img src="img/RIS-logoklien-1.png" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
                                 <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
                                 <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
                                 <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
@@ -466,50 +469,50 @@
                         <div class="col-12">
                             <div class="testimonial-slider">
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>Andi Setiawan</h3>
+                                    <h4>Direktur Operasional PT Samudra Energi</h4>
+                                    <p>"PT. RIS adalah mitra yang dapat diandalkan dalam penyediaan bahan bakar industri kami. Kualitas produk mereka selalu terjaga sesuai standar Ditjen Migas, dan pengirimannya pun selalu tepat waktu. Pelayanan profesional serta dukungan armada yang lengkap membuat kami semakin percaya untuk terus bekerja sama."</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>Budi Santoso</h3>
+                                    <h4>Manajer Logistik PT Maritim Nusantara</h4>
+                                    <p>"Kami sangat puas dengan layanan pengangkutan bahan bakar dari PT. RIS. Armada mereka terawat dengan baik, dan tim logistiknya sangat responsif dalam menangani setiap permintaan kami. Pengiriman selalu lancar, tanpa kendala berarti. Terima kasih PT. RIS atas kerja sama yang luar biasa!"</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>Rina Widyaningsih</h3>
+                                    <h4>Procurement Manager PT Mega Industri</h4>
+                                    <p>"Sebagai perusahaan industri yang membutuhkan pasokan bahan bakar yang stabil, PT. RIS adalah solusi terbaik bagi kami. Produk yang mereka sediakan memiliki kualitas tinggi dan sesuai dengan kebutuhan operasional kami. Pelayanan yang cepat dan profesional membuat kami semakin nyaman bermitra dengan mereka."</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>Hendra Pratama</h3>
+                                    <h4>CEO PT Lautan Biru</h4>
+                                    <p>"Kami sudah bekerja sama dengan PT. RIS selama beberapa tahun, dan mereka selalu menunjukkan komitmen tinggi terhadap kualitas dan kepuasan pelanggan. Keandalan dalam penyediaan bahan bakar serta fleksibilitas dalam pengiriman menjadikan mereka pilihan utama kami. Sangat direkomendasikan!"</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>Andi Setiawan</h3>
+                                    <h4>Direktur Operasional PT Samudra Energi</h4>
+                                    <p>"PT. RIS adalah mitra yang dapat diandalkan dalam penyediaan bahan bakar industri kami. Kualitas produk mereka selalu terjaga sesuai standar Ditjen Migas, dan pengirimannya pun selalu tepat waktu. Pelayanan profesional serta dukungan armada yang lengkap membuat kami semakin percaya untuk terus bekerja sama."</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>Budi Santoso</h3>
+                                    <h4>Manajer Logistik PT Maritim Nusantara</h4>
+                                    <p>"Kami sangat puas dengan layanan pengangkutan bahan bakar dari PT. RIS. Armada mereka terawat dengan baik, dan tim logistiknya sangat responsif dalam menangani setiap permintaan kami. Pengiriman selalu lancar, tanpa kendala berarti. Terima kasih PT. RIS atas kerja sama yang luar biasa!"</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>Rina Widyaningsih</h3>
+                                    <h4>Procurement Manager PT Mega Industri</h4>
+                                    <p>"Sebagai perusahaan industri yang membutuhkan pasokan bahan bakar yang stabil, PT. RIS adalah solusi terbaik bagi kami. Produk yang mereka sediakan memiliki kualitas tinggi dan sesuai dengan kebutuhan operasional kami. Pelayanan yang cepat dan profesional membuat kami semakin nyaman bermitra dengan mereka."</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>Hendra Pratama</h3>
+                                    <h4>CEO PT Lautan Biru</h4>
+                                    <p>"Kami sudah bekerja sama dengan PT. RIS selama beberapa tahun, dan mereka selalu menunjukkan komitmen tinggi terhadap kualitas dan kepuasan pelanggan. Keandalan dalam penyediaan bahan bakar serta fleksibilitas dalam pengiriman menjadikan mereka pilihan utama kami. Sangat direkomendasikan!"</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- Testimonial End -->
 
 
